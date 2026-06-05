@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>鈦金運彩</title>
+  <style>
+    :root {
+      --bg: #07101d;
+      --text: #ddecff;
+      --muted: #97aecf;
+      --red: #fb7185;
+      --blue: #60a5fa;
+      --green: #34d399;
+      --gold: #f6d57a;
+      --amber: #fbbf24;
+      --purple: #a78bfa;
+      --cyan: #22d3ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(34,211,238,0.11), transparent 30%),
+        radial-gradient(circle at 85% 100%, rgba(96,165,250,0.14), transparent 38%),
+        var(--bg);
+      color: var(--text);
+    }
+    .hidden { display: none !important; }
+    .app { max-width: 1480px; margin: 0 auto; padding: 12px; min-height: 100vh; }
+    .topbar {
+      display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+      border: 1px solid rgba(246,213,122,0.35);
+      background: linear-gradient(180deg, rgba(16,28,49,0.95), rgba(8,17,30,0.95));
+      border-radius: 12px; padding: 12px 14px;
+    }
+    .brand h1 { margin: 0; font-size: 24px; color: var(--gold); }
+    .brand p { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
+    .top-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .user-badge {
+      font-size: 12px; color: var(--gold);
+      border: 1px solid rgba(246,213,122,0.35); border-radius: 8px; padding: 6px 10px;
+    }
+    .mini-btn {
+      padding: 6px 10px; border-radius: 6px; font-size: 12px; font-weight: 700;
+      border: 1px solid rgba(246,213,122,0.4); background: rgba(15,31,55,0.7);
+      color: var(--gold); cursor: pointer;
+    }
+    .layout {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 240px 1fr 420px;
+      gap: 12px;
+    }
+    .card {
+      border: 1px solid rgba(246,213,122,0.25);
+      border-radius: 12px;
+      padding: 12px;
+      background: linear-gradient(180deg, rgba(16,28,49,0.95), rgba(9,19,34,0.95));
+    }
+    .card h2, .card h3 { margin: 0 0 10px; color: var(--gold); font-size: 15px; }
+    .field { margin-bottom: 10px; }
+    .field label { display: block; color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+    select, input[type="date"], .text-input {
+      width: 100%; border: 1px solid rgba(151,174,207,0.45);
+      background: #132742; color: var(--text); padding: 8px; border-radius: 8px; outline: none;
+    }
+    .toggles { display: flex; gap: 6px; flex-wrap: wrap; }
+    .chip {
+      border: 1px solid rgba(151,174,207,0.45); border-radius: 999px;
+      padding: 6px 10px; font-size: 12px; cursor: pointer; user-select: none;
+      color: var(--muted); background: rgba(19,39,66,0.65);
+    }
+    .chip.on {
+      color: #0a1525; background: linear-gradient(120deg, #22d3ee, #93c5fd);
+      border-color: transparent; font-weight: 700;
+    }
+    .btn {
+      width: 100%; border: 0; padding: 9px 10px; border-radius: 8px;
+      font-weight: 700; cursor: pointer; color: #04111f;
+      background: linear-gradient(120deg, #22d3ee, #93c5fd);
+    }
+    .table-wrap { max-height: 72vh; overflow: auto; border-radius: 10px; border: 1px solid rgba(151,174,207,0.22); }
+    .match-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .match-table thead th {
+      position: sticky; top: 0; z-index: 1;
+      background: #0f1f36; color: var(--gold); font-size: 12px; font-weight: 700;
+      padding: 10px 8px; text-align: left; border-bottom: 1px solid rgba(246,213,122,0.25);
+    }
+    .match-table tbody tr {
+      cursor: pointer; border-bottom: 1px solid rgba(151,174,207,0.12);
+      background: rgba(18,35,61,0.55);
+    }
+    .match-table tbody tr:hover { background: rgba(24,45,78,0.85); }
+    .match-table tbody tr.active {
+      background: rgba(34,211,238,0.1);
+      box-shadow: inset 0 0 0 1px rgba(34,211,238,0.45);
+    }
+    .match-table td { padding: 10px 8px; vertical-align: middle; }
+    .league-pill {
+      display: inline-block; padding: 3px 8px; border-radius: 999px;
+      background: rgba(19,39,66,0.9); border: 1px solid rgba(151,174,207,0.35);
+      font-size: 11px; color: var(--muted); white-space: nowrap;
+    }
+    .matchup { font-weight: 700; line-height: 1.45; }
+    .market-cell { line-height: 1.5; }
+    .market-type { color: var(--muted); font-size: 11px; }
+    .rec-team { color: var(--green); font-weight: 800; font-size: 14px; }
+    .odds-val { font-weight: 800; color: #fff; font-size: 15px; }
+    .conf-wrap { min-width: 88px; }
+    .conf-bar {
+      height: 6px; border-radius: 999px; background: rgba(151,174,207,0.2); overflow: hidden;
+      margin-bottom: 4px;
+    }
+    .conf-bar > span {
+      display: block; height: 100%; border-radius: 999px;
+      background: linear-gradient(90deg, #34d399, #22d3ee);
+    }
+    .conf-num { font-weight: 800; color: var(--green); font-size: 13px; }
+    .analysis-head { text-align: center; margin-bottom: 8px; }
+    .analysis-head .title { font-size: 18px; font-weight: 800; color: #fff; }
+    .analysis-head .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
+    .chart-box {
+      border: 1px solid rgba(151,174,207,0.25); border-radius: 10px;
+      padding: 10px 8px; background: rgba(7,16,29,0.55); text-align: center;
+    }
+    .chart-box h4 { margin: 0 0 6px; font-size: 12px; color: var(--gold); font-weight: 700; }
+    .pie-wrap { display: flex; justify-content: center; }
+    .pie-svg { display: block; }
+    .legend { margin-top: 8px; display: grid; gap: 4px; text-align: left; }
+    .legend-item {
+      display: grid; grid-template-columns: 10px 1fr auto; gap: 6px;
+      align-items: center; font-size: 11px; color: var(--muted);
+    }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .legend-item b { color: var(--text); font-size: 11px; }
+    .factor-hero {
+      margin-top: 10px; border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 10px; padding: 10px; background: rgba(34,211,238,0.06);
+    }
+
+    .bet-breakdown { text-align: left; }
+    .bet-row {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding: 8px 6px; border-bottom: 1px dashed rgba(151,174,207,0.28);
+    }
+    .bet-row:last-child { border-bottom: none; }
+    .bet-left { display: grid; gap: 2px; }
+    .bet-label { color: var(--muted); font-size: 11px; font-weight: 700; }
+    .bet-odds { color: #fff; font-size: 14px; font-weight: 900; }
+    .bet-conf { color: var(--green); font-size: 13px; font-weight: 900; white-space: nowrap; }
+    .factor-hero .top {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;
+    }
+    .factor-hero .top span:first-child { font-size: 13px; font-weight: 800; color: var(--cyan); }
+    .factor-hero .top span:last-child { font-size: 22px; font-weight: 900; color: #fff; }
+    .hero-odds { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .footer { margin-top: 10px; text-align: center; color: var(--muted); font-size: 12px; }
+    .auth-overlay {
+      position: fixed; inset: 0; z-index: 1000;
+      background: rgba(4, 10, 20, 0.72); backdrop-filter: blur(3px);
+      display: flex; align-items: center; justify-content: center; padding: 16px;
+    }
+    .auth-card {
+      width: min(420px, 100%); border-radius: 12px;
+      border: 1px solid rgba(246,213,122,0.5);
+      background: linear-gradient(180deg, rgba(15,30,54,0.98), rgba(8,17,32,0.98));
+      padding: 14px; box-shadow: 0 16px 46px rgba(0,0,0,0.38);
+    }
+    .auth-card h3 { margin: 0 0 10px; color: var(--gold); }
+    .field-label { font-size: 12px; color: var(--muted); margin-bottom: 4px; display: block; }
+    .auth-error { color: #fb7185; font-size: 12px; min-height: 18px; }
+    .admin-panel {
+      margin-top: 12px; border: 1px solid rgba(246,213,122,0.35);
+      border-radius: 12px; padding: 10px;
+      background: linear-gradient(180deg, rgba(16,28,49,0.95), rgba(9,19,34,0.95));
+    }
+    .admin-header {
+      display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px;
+    }
+    .admin-form {
+      display: grid; grid-template-columns: repeat(3, minmax(120px, 1fr)) auto;
+      gap: 8px; align-items: end;
+    }
+    .data-ops { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+    .admin-list {
+      margin-top: 10px; max-height: 160px; overflow: auto;
+      border: 1px solid rgba(246,213,122,0.25); border-radius: 6px;
+      padding: 6px; font-size: 12px; line-height: 1.6;
+    }
+    @media (max-width: 1200px) {
+      .layout { grid-template-columns: 1fr; }
+      .table-wrap { max-height: unset; }
+      .chart-grid { grid-template-columns: 1fr; }
+      .admin-form { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 700px) {
+      .admin-form { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div id="authOverlay" class="auth-overlay">
+    <div class="auth-card">
+      <h3>會員登入</h3>
+      <label class="field-label" for="loginUser">帳號</label>
+      <input id="loginUser" class="text-input" placeholder="請輸入帳號" />
+      <label class="field-label" for="loginPass">密碼</label>
+      <input id="loginPass" class="text-input" type="password" placeholder="請輸入密碼" />
+      <div id="authError" class="auth-error"></div>
+      <button class="btn" style="margin-top:8px;" onclick="login()">登入</button>
+    </div>
+  </div>
+
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <h1>鈦金運彩</h1>
+        <p>世界盃 · 足球 · 籃球 · 棒球</p>
+      </div>
+      <div class="top-actions">
+        <span id="userBadge" class="user-badge hidden"></span>
+        <button id="logoutBtn" class="mini-btn hidden" onclick="logout()">登出</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <h3>篩選</h3>
+        <div class="field">
+          <label>運動</label>
+          <select id="sportSelect">
+            <option value="all">全部</option>
+            <option value="世界盃">世界盃</option>
+            <option value="足球">足球</option>
+            <option value="籃球">籃球</option>
+            <option value="棒球">棒球</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>聯盟</label>
+          <select id="leagueSelect"><option value="all">全部聯盟</option></select>
+        </div>
+        <div class="field">
+          <label>日期（留空 = 全部）</label>
+          <input id="dateInput" type="date" />
+        </div>
+        <div class="field">
+          <label>狀態</label>
+          <div class="toggles">
+            <span class="chip on" data-filter="熱門">熱門</span>
+            <span class="chip on" data-filter="即將開賽">即將</span>
+            <span class="chip on" data-filter="進行中">進行中</span>
+          </div>
+        </div>
+        <button id="applyBtn" class="btn">套用</button>
+      </section>
+
+      <section class="card">
+        <h2>賽事推薦</h2>
+        <div class="table-wrap">
+          <table class="match-table">
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>聯盟</th>
+                <th>對戰</th>
+                <th>市場 / 推薦</th>
+                <th>賠率</th>
+                <th>信心度</th>
+              </tr>
+            </thead>
+            <tbody id="matchList"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="analysis-head">
+          <div id="analysisTitle" class="title">選擇賽事</div>
+          <div id="analysisSub" class="sub">—</div>
+        </div>
+        <div class="chart-grid">
+          <div class="chart-box">
+            <h4>下注盤口（英式 a:b）</h4>
+            <div id="betBreakdown" class="bet-breakdown"></div>
+          </div>
+          <div class="chart-box">
+            <h4 id="reasonTitle">主勝依據構成</h4>
+            <div id="reasonPie" class="pie-wrap"></div>
+            <div id="reasonLegend" class="legend"></div>
+          </div>
+        </div>
+        <div class="factor-hero">
+          <div class="top">
+            <span id="heroLabel">市場 / 推薦</span>
+            <span id="heroConf">--</span>
+          </div>
+          <div id="heroOdds" class="hero-odds">—</div>
+          <div id="heroFactor" style="font-size:12px;color:var(--muted);margin-top:6px;">—</div>
+        </div>
+      </section>
+    </main>
+
+    <div id="adminPanel" class="admin-panel hidden">
+      <div class="admin-header">
+        <div style="color:var(--gold);font-weight:700;">管理員：會員管理</div>
+        <button id="toggleAdminBtn" class="mini-btn" onclick="toggleAdminBody()">收合</button>
+      </div>
+      <div id="adminBody">
+        <div id="dataOps" class="data-ops hidden">
+          <button class="mini-btn" onclick="exportData()">匯出會員資料</button>
+          <input id="importFile" type="file" accept="application/json,.json" class="hidden" onchange="importDataFromFile(event)" />
+          <button class="mini-btn" onclick="document.getElementById('importFile').click()">匯入會員資料</button>
+          <button class="mini-btn" onclick="refreshMatches()">更新賽事資料</button>
+        </div>
+        <div class="admin-form">
+          <div>
+            <label class="field-label">暱稱</label>
+            <input id="mNick" class="text-input" placeholder="會員暱稱" />
+          </div>
+          <div>
+            <label class="field-label">帳號</label>
+            <input id="mUser" class="text-input" placeholder="登入帳號" />
+          </div>
+          <div>
+            <label class="field-label">密碼</label>
+            <input id="mPass" class="text-input" type="password" placeholder="登入密碼" />
+          </div>
+          <button class="btn" style="width:auto;min-width:96px;" onclick="createMember()">建立會員</button>
+        </div>
+        <div id="adminMsg" style="font-size:12px;color:var(--muted);margin-top:6px;"></div>
+        <div id="memberList" class="admin-list"></div>
+      </div>
+    </div>
+
+    <div id="footerText" class="footer">賠率更新：載入中…</div>
+  </div>
+
+  <script>
+    const state = {
+      selectedId: null,
+      activeStatus: new Set(["熱門", "即將開賽", "進行中"]),
+      matches: [],
+      predictions: new Map(),
+    };
+
+    const authState = { token: localStorage.getItem("sports-auth-token") || "", user: null };
+    let sessionWatcherTimer = null;
+    let handlingForcedLogout = false;
+
+    const matchListEl = document.getElementById("matchList");
+    const sportSelect = document.getElementById("sportSelect");
+    const leagueSelect = document.getElementById("leagueSelect");
+    const dateInput = document.getElementById("dateInput");
+    const applyBtn = document.getElementById("applyBtn");
+    const chips = Array.from(document.querySelectorAll(".chip"));
+    const authOverlay = document.getElementById("authOverlay");
+    const authError = document.getElementById("authError");
+    const userBadge = document.getElementById("userBadge");
+    const logoutBtn = document.getElementById("logoutBtn");
+    const adminPanel = document.getElementById("adminPanel");
+    const adminMsg = document.getElementById("adminMsg");
+    const memberList = document.getElementById("memberList");
+    const adminBody = document.getElementById("adminBody");
+    const dataOps = document.getElementById("dataOps");
+    const toggleAdminBtn = document.getElementById("toggleAdminBtn");
+
+    function todayStr() {
+      const d = new Date();
+      const m = String(d.getMonth() + 1).padStart(2, "0");
+      const day = String(d.getDate()).padStart(2, "0");
+      return `${d.getFullYear()}-${m}-${day}`;
+    }
+
+    async function apiFetch(url, options = {}) {
+      const headers = { ...(options.headers || {}) };
+      if (authState.token) headers.Authorization = `Bearer ${authState.token}`;
+      return fetch(url, { ...options, headers });
+    }
+
+    function stopSessionWatcher() {
+      if (sessionWatcherTimer) {
+        clearInterval(sessionWatcherTimer);
+        sessionWatcherTimer = null;
+      }
+    }
+
+    function startSessionWatcher() {
+      stopSessionWatcher();
+      sessionWatcherTimer = setInterval(checkSessionAlive, 5000);
+    }
+
+    async function handleForcedLogout(detail = "登入已失效，請重新登入") {
+      if (handlingForcedLogout) return;
+      handlingForcedLogout = true;
+      if (detail.includes("重複登入")) {
+        alert("偵測到重複登入，您的帳號已在其他裝置登入。");
+      } else {
+        alert(detail);
+      }
+      authState.token = "";
+      authState.user = null;
+      localStorage.removeItem("sports-auth-token");
+      stopSessionWatcher();
+      setAuthUI();
+      adminMsg.textContent = "";
+      memberList.innerHTML = "";
+      handlingForcedLogout = false;
+    }
+
+    async function checkSessionAlive() {
+      if (!authState.token || !authState.user) return;
+      const res = await apiFetch("/auth/me");
+      if (res.ok) return;
+      let detail = "登入已失效，請重新登入";
+      try {
+        const data = await res.json();
+        if (data && data.detail) detail = data.detail;
+      } catch (_) {}
+      await handleForcedLogout(detail);
+    }
+
+    function setAuthUI() {
+      const isLoggedIn = !!authState.user;
+      authOverlay.classList.toggle("hidden", isLoggedIn);
+      userBadge.classList.toggle("hidden", !isLoggedIn);
+      logoutBtn.classList.toggle("hidden", !isLoggedIn);
+      if (isLoggedIn) {
+        const roleLabel = authState.user.role === "admin" ? "管理員" : "會員";
+        userBadge.textContent = `${authState.user.nickname}（${roleLabel}）`;
+      } else {
+        userBadge.textContent = "";
+      }
+      const canManage = isLoggedIn && (authState.user.canManage || authState.user.role === "admin");
+      adminPanel.classList.toggle("hidden", !canManage);
+      const canDataOps = isLoggedIn && authState.user.canDataOps;
+      dataOps.classList.toggle("hidden", !canDataOps);
+    }
+
+    function toggleAdminBody() {
+      const isHidden = adminBody.classList.toggle("hidden");
+      toggleAdminBtn.textContent = isHidden ? "展開" : "收合";
+    }
+
+    async function loadMembers() {
+      if (!authState.user || !(authState.user.canManage || authState.user.role === "admin")) return;
+      const res = await apiFetch("/admin/members");
+      if (!res.ok) return;
+      const rows = await res.json();
+      memberList.innerHTML = rows.map((r) => `
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid rgba(246,213,122,0.16);padding:4px 0;">
+          <span>${r.role === "admin" ? "管理員" : "會員"}｜${r.nickname}｜${r.username}</span>
+          <span style="display:flex;gap:4px;">
+            <button class="mini-btn" onclick="editMember(${r.id}, '${r.nickname.replace(/'/g, "\\'")}', '${r.username.replace(/'/g, "\\'")}')">編輯</button>
+            ${r.id === authState.user.id ? "" : `<button class="mini-btn" onclick="deleteMember(${r.id})">刪除</button>`}
+          </span>
+        </div>
+      `).join("");
+    }
+
+    async function login() {
+      authError.textContent = "";
+      const username = document.getElementById("loginUser").value.trim();
+      const password = document.getElementById("loginPass").value;
+      if (!username || !password) {
+        authError.textContent = "請輸入帳號與密碼";
+        return;
+      }
+      const res = await fetch("/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        authError.textContent = data.detail || "登入失敗";
+        return;
+      }
+      authState.token = data.token;
+      authState.user = data.user;
+      localStorage.setItem("sports-auth-token", data.token);
+      document.getElementById("loginPass").value = "";
+      const meRes = await apiFetch("/auth/me");
+      if (meRes.ok) authState.user = await meRes.json();
+      setAuthUI();
+      startSessionWatcher();
+      await loadMembers();
+      await loadLeagues();
+      await loadMatches();
+    }
+
+    async function logout() {
+      if (authState.token) await apiFetch("/auth/logout", { method: "POST" });
+      authState.token = "";
+      authState.user = null;
+      localStorage.removeItem("sports-auth-token");
+      stopSessionWatcher();
+      setAuthUI();
+      adminMsg.textContent = "";
+      memberList.innerHTML = "";
+    }
+
+    async function createMember() {
+      if (!authState.user || !(authState.user.canManage || authState.user.role === "admin")) return;
+      adminMsg.textContent = "";
+      const payload = {
+        nickname: document.getElementById("mNick").value.trim(),
+        username: document.getElementById("mUser").value.trim(),
+        password: document.getElementById("mPass").value,
+      };
+      if (!payload.nickname || !payload.username || !payload.password) {
+        adminMsg.textContent = "請填寫暱稱、帳號、密碼";
+        return;
+      }
+      const res = await apiFetch("/admin/members", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        adminMsg.textContent = data.detail || "建立會員失敗";
+        return;
+      }
+      adminMsg.textContent = "會員建立成功";
+      document.getElementById("mNick").value = "";
+      document.getElementById("mUser").value = "";
+      document.getElementById("mPass").value = "";
+      await loadMembers();
+    }
+
+    async function editMember(id, oldNick, oldUser) {
+      const field = prompt("請選擇要編輯的欄位：\n1=暱稱\n2=帳號\n3=密碼", "1");
+      if (field === null) return;
+      const payload = {};
+      if (field.trim() === "1") {
+        const nickname = prompt("請輸入新暱稱", oldNick);
+        if (nickname === null || !nickname.trim()) return;
+        payload.nickname = nickname.trim();
+      } else if (field.trim() === "2") {
+        const username = prompt("請輸入新帳號", oldUser);
+        if (username === null || !username.trim()) return;
+        payload.username = username.trim();
+      } else if (field.trim() === "3") {
+        const password = prompt("請輸入新密碼", "");
+        if (password === null || !password.trim()) return;
+        payload.password = password.trim();
+      } else {
+        adminMsg.textContent = "請輸入 1、2 或 3";
+        return;
+      }
+      const res = await apiFetch(`/admin/members/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        adminMsg.textContent = data.detail || "編輯失敗";
+        return;
+      }
+      adminMsg.textContent = "會員更新成功";
+      await loadMembers();
+    }
+
+    async function deleteMember(id) {
+      if (!confirm("確定刪除這位會員？")) return;
+      const res = await apiFetch(`/admin/members/${id}`, { method: "DELETE" });
+      const data = await res.json();
+      if (!res.ok) {
+        adminMsg.textContent = data.detail || "刪除失敗";
+        return;
+      }
+      adminMsg.textContent = "會員刪除成功";
+      await loadMembers();
+    }
+
+    async function exportData() {
+      const res = await apiFetch("/admin/export-data");
+      const data = await res.json();
+      if (!res.ok) {
+        adminMsg.textContent = data.detail || "匯出失敗";
+        return;
+      }
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `sports-members-backup-${Date.now()}.json`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      adminMsg.textContent = "匯出成功";
+    }
+
+    async function importDataFromFile(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      try {
+        const text = await file.text();
+        const payload = JSON.parse(text);
+        const res = await apiFetch("/admin/import-data", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          adminMsg.textContent = data.detail || "匯入失敗";
+          return;
+        }
+        adminMsg.textContent = `匯入成功，共 ${data.count} 筆`;
+        await loadMembers();
+      } catch (_) {
+        adminMsg.textContent = "匯入檔案格式錯誤";
+      } finally {
+        event.target.value = "";
+      }
+    }
+
+    async function refreshMatches() {
+      adminMsg.textContent = "正在向 The Odds API 拉取真實賠率（英超/西甲/德甲/NBA/MLB…）…";
+      const res = await apiFetch("/api/refresh", { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) {
+        const detail = data.detail || "更新失敗";
+        adminMsg.textContent = detail.includes("ODDS_API_KEY")
+          ? "請先到 https://the-odds-api.com 免費註冊，取得 API Key 後設定 ODDS_API_KEY 環境變數"
+          : detail;
+        return;
+      }
+      const quota = data.oddsApi && data.oddsApi.requests_remaining != null
+        ? `，本月剩餘 ${data.oddsApi.requests_remaining} 次`
+        : "";
+      adminMsg.textContent = `真實賠率已更新（${data.count} 場${quota}）`;
+      state.predictions.clear();
+      await loadLeagues();
+      await loadMatches();
+    }
+
+    async function bootstrapAuth() {
+      if (!authState.token) {
+        setAuthUI();
+        return;
+      }
+      const res = await apiFetch("/auth/me");
+      if (!res.ok) {
+        authState.token = "";
+        localStorage.removeItem("sports-auth-token");
+        stopSessionWatcher();
+        setAuthUI();
+        return;
+      }
+      authState.user = await res.json();
+      setAuthUI();
+      startSessionWatcher();
+      await loadMembers();
+      await loadLeagues();
+      await loadMatches();
+    }
+
+    function polarToCartesian(cx, cy, r, angleDeg) {
+      const rad = ((angleDeg - 90) * Math.PI) / 180;
+      return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
+    }
+
+    function describeArc(cx, cy, r, startAngle, endAngle) {
+      const start = polarToCartesian(cx, cy, r, endAngle);
+      const end = polarToCartesian(cx, cy, r, startAngle);
+      const largeArc = endAngle - startAngle <= 180 ? 0 : 1;
+      return `M ${cx} ${cy} L ${start.x} ${start.y} A ${r} ${r} 0 ${largeArc} 0 ${end.x} ${end.y} Z`;
+    }
+
+    function renderPie(container, segments, size, hole) {
+      const total = segments.reduce((s, x) => s + x.value, 0) || 1;
+      let angle = 0;
+      const cx = size / 2;
+      const cy = size / 2;
+      const r = size / 2 - 2;
+      const paths = segments.map((seg) => {
+        const sweep = (seg.value / total) * 360;
+        const d = describeArc(cx, cy, r, angle, angle + sweep);
+        angle += sweep;
+        return `<path d="${d}" fill="${seg.color}"></path>`;
+      }).join("");
+      const inner = hole ? `<circle cx="${cx}" cy="${cy}" r="${hole}" fill="#0f1d34"></circle>` : "";
+      container.innerHTML = `<svg class="pie-svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">${paths}${inner}</svg>`;
+    }
+
+    function renderLegend(container, segments) {
+      container.innerHTML = segments.map((s) => `
+        <div class="legend-item">
+          <span class="dot" style="background:${s.color}"></span>
+          <span>${s.label}</span>
+          <b>${s.value}%</b>
+        </div>
+      `).join("");
+    }
+
+    function normalizePrediction(pred, match) {
+      if (!pred || !match) return null;
+      const pick = pred.pick || "home";
+      const teamByPick = {
+        home: match.home,
+        away: match.away,
+        draw: "和局",
+      };
+      const oddsByPick = match.odds || {};
+      return {
+        ...pred,
+        market: pred.market || match.market || "獨贏",
+        recommendedTeam: pred.recommendedTeam || teamByPick[pick] || match.home,
+        recommendedOdds: pred.recommendedOdds ?? oddsByPick[pick] ?? "—",
+        confidence: pred.confidence ?? 0,
+      };
+    }
+
+    async function fetchPrediction(matchId) {
+      const match = state.matches.find((m) => m.id === matchId);
+      if (state.predictions.has(matchId)) {
+        return normalizePrediction(state.predictions.get(matchId), match);
+      }
+      const res = await apiFetch(`/api/predict/${matchId}`);
+      if (!res.ok) return null;
+      const data = await res.json();
+      const normalized = normalizePrediction(data.prediction, data.match || match);
+      state.predictions.set(matchId, normalized);
+      return normalized;
+    }
+
+    function renderDetail(pred) {
+      const titleEl = document.getElementById("analysisTitle");
+      const subEl = document.getElementById("analysisSub");
+      const reasonPie = document.getElementById("reasonPie");
+      const reasonLegend = document.getElementById("reasonLegend");
+      const reasonTitle = document.getElementById("reasonTitle");
+      const heroLabel = document.getElementById("heroLabel");
+      const heroConf = document.getElementById("heroConf");
+      const heroFactor = document.getElementById("heroFactor");
+      const heroOdds = document.getElementById("heroOdds");
+      const betBreakdown = document.getElementById("betBreakdown");
+
+      if (!pred) {
+        titleEl.textContent = "選擇賽事";
+        subEl.textContent = "—";
+        reasonPie.innerHTML = "";
+        reasonLegend.innerHTML = "";
+        betBreakdown.innerHTML = "";
+        heroLabel.textContent = "市場 / 推薦";
+        heroConf.textContent = "--";
+        heroOdds.textContent = "—";
+        heroFactor.textContent = "—";
+        return;
+      }
+
+      titleEl.textContent = `${pred.market} · ${pred.recommendedTeam}`;
+      subEl.textContent = pred.subtitle;
+      reasonTitle.textContent = pred.reasonTitle;
+      renderPie(reasonPie, pred.reasonSegments, 150, 42);
+      renderLegend(reasonLegend, pred.reasonSegments);
+
+      const bets = pred.bets || [];
+      betBreakdown.innerHTML = bets
+        .map(
+          (b) => `
+          <div class="bet-row">
+            <div class="bet-left">
+              <div class="bet-label">${b.label}</div>
+            </div>
+            <div class="bet-conf">信心 ${b.confidence}%</div>
+          </div>
+        `
+        )
+        .join("");
+      heroLabel.textContent = `${pred.market} · 買 ${pred.recommendedTeam}`;
+      heroConf.textContent = `信心 ${pred.confidence}%`;
+      heroOdds.textContent = `建議賠率 ${pred.recommendedOdds}`;
+      heroFactor.textContent = `最大依據：${pred.topFactor.label}（${pred.topFactor.value}%）`;
+    }
+
+    function formatDateShort(iso) {
+      if (!iso) return "—";
+      const parts = iso.split("-");
+      return parts.length >= 3 ? `${parts[1]}/${parts[2]}` : iso;
+    }
+
+    async function renderList() {
+      const list = state.matches;
+      if (!list.length) {
+        matchListEl.innerHTML = "<tr><td colspan='6' style='color:var(--muted);font-size:13px;padding:14px;'>查無賽事。可試試清空日期篩選，或管理員按「更新賽事資料」重新拉取。</td></tr>";
+        state.selectedId = null;
+        renderDetail(null);
+        return;
+      }
+
+      if (!state.selectedId || !list.some((m) => m.id === state.selectedId)) {
+        state.selectedId = list[0].id;
+      }
+
+      matchListEl.innerHTML = "";
+      for (const match of list) {
+        const pred = await fetchPrediction(match.id);
+        const row = document.createElement("tr");
+        row.className = match.id === state.selectedId ? "active" : "";
+        const conf = pred ? pred.confidence : 0;
+        const odds = pred ? pred.recommendedOdds : "—";
+        const market = pred ? pred.market : "獨贏";
+        const team = pred ? pred.recommendedTeam : "—";
+        row.innerHTML = `
+          <td>${formatDateShort(match.date)}</td>
+          <td><span class="league-pill">${match.league}</span></td>
+          <td class="matchup">${match.home}<br><span style="color:var(--muted);font-weight:400;">vs</span><br>${match.away}</td>
+          <td class="market-cell">
+            <div class="market-type">${market}</div>
+            <div class="rec-team">${team}</div>
+          </td>
+          <td class="odds-val">${odds}</td>
+          <td class="conf-wrap">
+            <div class="conf-bar"><span style="width:${conf}%"></span></div>
+            <div class="conf-num">${pred ? `${conf}%` : "—"}</div>
+          </td>
+        `;
+        row.addEventListener("click", () => {
+          state.selectedId = match.id;
+          renderList();
+        });
+        matchListEl.appendChild(row);
+      }
+
+      const selectedMatch = list.find((m) => m.id === state.selectedId);
+      const selectedPred = normalizePrediction(await fetchPrediction(state.selectedId), selectedMatch);
+      renderDetail(selectedPred);
+    }
+
+    async function loadLeagues() {
+      const sport = sportSelect.value;
+      const res = await apiFetch(`/api/leagues?sport=${encodeURIComponent(sport)}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      const current = leagueSelect.value;
+      leagueSelect.innerHTML = '<option value="all">全部聯盟</option>';
+      data.leagues.forEach((l) => {
+        const opt = document.createElement("option");
+        opt.value = l;
+        opt.textContent = l;
+        leagueSelect.appendChild(opt);
+      });
+      if ([...leagueSelect.options].some((o) => o.value === current)) {
+        leagueSelect.value = current;
+      }
+    }
+
+    async function loadMatches() {
+      const sport = sportSelect.value;
+      const league = leagueSelect.value;
+      const date = dateInput.value;
+      const status = [...state.activeStatus].join(",");
+      const qs = new URLSearchParams({ sport, league, date, status });
+      const [matchRes, metaRes] = await Promise.all([
+        apiFetch(`/api/matches?${qs.toString()}`),
+        apiFetch("/api/meta"),
+      ]);
+      if (!matchRes.ok) return;
+      const data = await matchRes.json();
+      state.matches = data.matches || [];
+
+      // 若今天沒有賽事，就改抓「最早的一天」避免一刷新就空白
+      if (!state.matches.length && date === todayStr()) {
+        const qs2 = new URLSearchParams({ sport, league, date: "", status });
+        const fallbackRes = await apiFetch(`/api/matches?${qs2.toString()}`);
+        if (fallbackRes.ok) {
+          const data2 = await fallbackRes.json();
+          const all = data2.matches || [];
+          if (all.length) {
+            const earliest = [...all].sort((a, b) => (a.date || "").localeCompare(b.date || ""))[0]?.date;
+            if (earliest) {
+              dateInput.value = earliest;
+              state.matches = all.filter((m) => m.date === earliest);
+            }
+          }
+        }
+      }
+
+      let footer = data.source || "資料來源";
+      if (metaRes.ok) {
+        const meta = await metaRes.json();
+        if (!state.matches.length) {
+          footer = meta.source || "尚無賽事，管理員請設定 ODDS_API_KEY 後按「更新賽事資料」";
+        }
+      }
+      document.getElementById("footerText").textContent = `賠率來源：${footer}`;
+      await renderList();
+    }
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const key = chip.dataset.filter;
+        if (state.activeStatus.has(key)) {
+          state.activeStatus.delete(key);
+          chip.classList.remove("on");
+        } else {
+          state.activeStatus.add(key);
+          chip.classList.add("on");
+        }
+      });
+    });
+
+    sportSelect.addEventListener("change", async () => {
+      await loadLeagues();
+    });
+    applyBtn.addEventListener("click", loadMatches);
+
+    // 預設顯示今天的賽事（避免一刷新就出現過多日期）
+    dateInput.value = todayStr();
+
+    bootstrapAuth();
+  </script>
+</body>
+</html>

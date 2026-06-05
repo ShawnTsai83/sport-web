@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+members.db
+odds_cache.json
+jbot_cache.json
+.env
+start.bat
+members-backup-*.json
