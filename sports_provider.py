@@ -13,7 +13,10 @@ from team_zh import to_zh_league, to_zh_team
 
 ODDS_API_BASE = "https://api.the-odds-api.com/v4"
 ODDS_CACHE_PATH = Path(__file__).resolve().parent / "odds_cache.json"
+ODDS_CACHE_SEED_PATH = Path(__file__).resolve().parent / "odds_cache_seed.json"
 ODDS_MIN_INTERVAL_SEC = 1
+# 手動更新最短間隔（小時），避免短時間重複扣 6 次額度；可用環境變數覆寫
+ODDS_REFRESH_COOLDOWN_HOURS = max(1, int(os.getenv("ODDS_REFRESH_COOLDOWN_HOURS", "24")))
 
 # 每個聯盟 1 次 API（regions=eu, markets=h2h）= 1 credit
 ODDS_API_FEEDS = [
@@ -277,33 +280,64 @@ def save_odds_cache(matches: List[Dict], meta: dict):
     )
 
 
-def load_odds_cache() -> List[Dict]:
-    if not ODDS_CACHE_PATH.exists():
-        return []
+def _read_cache_payload(path: Path) -> Optional[dict]:
+    if not path.exists():
+        return None
     try:
-        payload = json.loads(ODDS_CACHE_PATH.read_text(encoding="utf-8"))
-        matches = payload.get("matches") or []
-        meta = payload.get("meta") or {}
-        ODDS_API_META["last_fetch_at"] = payload.get("saved_at")
-        ODDS_API_META["cached_count"] = len(matches)
-        if meta.get("status"):
-            ODDS_API_META["last_status"] = meta.get("status")
-        if meta.get("requests_remaining") is not None:
-            ODDS_API_META["requests_remaining"] = meta.get("requests_remaining")
-        if meta.get("requests_used") is not None:
-            ODDS_API_META["requests_used"] = meta.get("requests_used")
-        # 確保快取是「包含 spreads/totals」的版本；舊快取只有 h2h 會導致下方玩法不足
-        has_spreads = any((m.get("spreads") or {}).get("home") for m in matches if isinstance(m, dict))
-        has_totals = any((m.get("totals") or {}).get("over") for m in matches if isinstance(m, dict))
-        if matches and not (has_spreads and has_totals):
-            return []
-
-        return matches
+        return json.loads(path.read_text(encoding="utf-8"))
     except Exception:
-        return []
+        return None
 
 
-def refresh_from_odds_api() -> dict:
+def _apply_cache_meta(payload: dict):
+    matches = payload.get("matches") or []
+    meta = payload.get("meta") or {}
+    ODDS_API_META["last_fetch_at"] = payload.get("saved_at")
+    ODDS_API_META["cached_count"] = len(matches)
+    if meta.get("status"):
+        ODDS_API_META["last_status"] = meta.get("status")
+    if meta.get("requests_remaining") is not None:
+        ODDS_API_META["requests_remaining"] = meta.get("requests_remaining")
+    if meta.get("requests_used") is not None:
+        ODDS_API_META["requests_used"] = meta.get("requests_used")
+
+
+def _cache_matches_valid(matches: List[Dict]) -> bool:
+    if not matches:
+        return False
+    has_spreads = any((m.get("spreads") or {}).get("home") for m in matches if isinstance(m, dict))
+    has_totals = any((m.get("totals") or {}).get("over") for m in matches if isinstance(m, dict))
+    return has_spreads and has_totals
+
+
+def get_cache_age_hours() -> Optional[float]:
+    saved_at = ODDS_API_META.get("last_fetch_at")
+    if not saved_at:
+        return None
+    try:
+        saved_dt = datetime.fromisoformat(saved_at)
+        if saved_dt.tzinfo is None:
+            saved_dt = saved_dt.replace(tzinfo=timezone.utc)
+        now = datetime.now(timezone.utc)
+        return (now - saved_dt.astimezone(timezone.utc)).total_seconds() / 3600
+    except Exception:
+        return None
+
+
+def load_odds_cache() -> List[Dict]:
+    for path in (ODDS_CACHE_PATH, ODDS_CACHE_SEED_PATH):
+        payload = _read_cache_payload(path)
+        if not payload:
+            continue
+        matches = payload.get("matches") or []
+        if not _cache_matches_valid(matches):
+            continue
+        _apply_cache_meta(payload)
+        return matches
+    return []
+
+
+def refresh_from_odds_api(force: bool = False) -> dict:
     api_key = get_odds_api_key()
     if not api_key:
         return {
@@ -313,6 +347,25 @@ def refresh_from_odds_api() -> dict:
             "source": get_data_source_label([]),
             "errors": ["請先設定 ODDS_API_KEY（到 https://the-odds-api.com 免費註冊取得）"],
             "oddsApi": get_odds_api_meta(),
+        }
+
+    cached = load_all_matches()
+    age_hours = get_cache_age_hours()
+    if not force and cached and age_hours is not None and age_hours < ODDS_REFRESH_COOLDOWN_HOURS:
+        hours_left = max(0.1, ODDS_REFRESH_COOLDOWN_HOURS - age_hours)
+        return {
+            "ok": True,
+            "skipped": True,
+            "matches": cached,
+            "count": len(cached),
+            "source": get_data_source_label(cached),
+            "errors": [],
+            "oddsApi": get_odds_api_meta(),
+            "message": (
+                f"距上次更新未滿 {ODDS_REFRESH_COOLDOWN_HOURS} 小時，已沿用快取"
+                f"（約 {hours_left:.1f} 小時後可再更新）"
+            ),
+            "creditsHint": "本次未消耗 API 額度",
         }
 
     all_matches: List[Dict] = []
@@ -344,12 +397,13 @@ def refresh_from_odds_api() -> dict:
     elif last_headers:
         _update_odds_meta_from_headers(last_headers, ODDS_API_META["last_status"])
 
-    credits_used = max(0, 500 - (ODDS_API_META.get("requests_remaining") or 500))
+    enriched = [_enrich_match(m) for m in all_matches]
     return {
         "ok": bool(all_matches),
-        "matches": all_matches,
-        "count": len(all_matches),
-        "source": get_data_source_label(all_matches),
+        "skipped": False,
+        "matches": enriched,
+        "count": len(enriched),
+        "source": get_data_source_label(enriched),
         "errors": errors,
         "oddsApi": get_odds_api_meta(),
         "creditsHint": "每次更新依聯盟計費（1 聯盟 = 1 次 API），一次回傳該聯盟所有賽事，不是一場一扣",

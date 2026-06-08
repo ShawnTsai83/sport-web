@@ -172,12 +172,8 @@ class ImportDataRequest(BaseModel):
 
 def refresh_match_cache():
     global MATCH_CACHE
+    # 只讀快取，不在啟動時自動打 API（Render 休眠重啟會反覆扣 6 次額度）
     MATCH_CACHE = load_all_matches()
-    # 若快取是舊版（只有 h2h，沒有 spreads/totals），就直接拉最新一次，確保畫面能顯示完整玩法
-    if not MATCH_CACHE:
-        result = refresh_from_odds_api()
-        if result.get("matches"):
-            MATCH_CACHE = result["matches"]
 
 
 init_db()
@@ -301,13 +297,16 @@ def api_matches(
 
 
 @app.post("/api/refresh")
-def api_refresh(authorization: Optional[str] = Header(default=None)):
+def api_refresh(
+    force: bool = Query(default=False),
+    authorization: Optional[str] = Header(default=None),
+):
     user = require_login(authorization)
     if not can_manage_members(user):
         raise HTTPException(status_code=403, detail="只有管理員可以更新賽事資料")
-    result = refresh_from_odds_api()
+    result = refresh_from_odds_api(force=force)
     global MATCH_CACHE
-    if result["matches"]:
+    if result.get("matches"):
         MATCH_CACHE = result["matches"]
     detail = "；".join(result["errors"]) if result["errors"] else ""
     if not result["ok"]:

@@ -314,7 +314,8 @@
           <button class="mini-btn" onclick="exportData()">匯出會員資料</button>
           <input id="importFile" type="file" accept="application/json,.json" class="hidden" onchange="importDataFromFile(event)" />
           <button class="mini-btn" onclick="document.getElementById('importFile').click()">匯入會員資料</button>
-          <button class="mini-btn" onclick="refreshMatches()">更新賽事資料</button>
+          <button class="mini-btn" onclick="refreshMatches(false)">更新賽事資料</button>
+          <button class="mini-btn" onclick="refreshMatches(true)">強制更新</button>
         </div>
         <div class="admin-form">
           <div>
@@ -622,9 +623,12 @@
       }
     }
 
-    async function refreshMatches() {
-      adminMsg.textContent = "正在向 The Odds API 拉取真實賠率（英超/西甲/德甲/NBA/MLB…）…";
-      const res = await apiFetch("/api/refresh", { method: "POST" });
+    async function refreshMatches(force = false) {
+      if (force && !confirm("強制更新會立即消耗約 6 次 API 額度，確定要繼續？")) return;
+      adminMsg.textContent = force
+        ? "強制向 The Odds API 拉取最新賠率…"
+        : "檢查是否需要更新賽事資料…";
+      const res = await apiFetch(`/api/refresh?force=${force ? "true" : "false"}`, { method: "POST" });
       const data = await res.json();
       if (!res.ok) {
         const detail = data.detail || "更新失敗";
@@ -636,7 +640,11 @@
       const quota = data.oddsApi && data.oddsApi.requests_remaining != null
         ? `，本月剩餘 ${data.oddsApi.requests_remaining} 次`
         : "";
-      adminMsg.textContent = `真實賠率已更新（${data.count} 場${quota}）`;
+      if (data.skipped) {
+        adminMsg.textContent = `${data.message || "已沿用快取"}（${data.count} 場${quota}）`;
+      } else {
+        adminMsg.textContent = `真實賠率已更新（${data.count} 場${quota}）`;
+      }
       state.predictions.clear();
       await loadLeagues();
       await loadMatches();
