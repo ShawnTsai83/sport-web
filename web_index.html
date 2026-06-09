@@ -624,7 +624,7 @@
     }
 
     async function refreshMatches(force = false) {
-      if (force && !confirm("強制更新會立即消耗約 6 次 API 額度，確定要繼續？")) return;
+      if (force && !confirm("強制更新會立即消耗約 3 次 API 額度（MLB/NBA/FIFA），確定要繼續？")) return;
       adminMsg.textContent = force
         ? "強制向 The Odds API 拉取最新賠率…"
         : "檢查是否需要更新賽事資料…";

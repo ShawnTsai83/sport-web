@@ -15,17 +15,14 @@ ODDS_API_BASE = "https://api.the-odds-api.com/v4"
 ODDS_CACHE_PATH = Path(__file__).resolve().parent / "odds_cache.json"
 ODDS_CACHE_SEED_PATH = Path(__file__).resolve().parent / "odds_cache_seed.json"
 ODDS_MIN_INTERVAL_SEC = 1
-# 手動更新最短間隔（小時），避免短時間重複扣 6 次額度；可用環境變數覆寫
+# 手動更新最短間隔（小時），避免短時間重複扣額度；可用環境變數覆寫
 ODDS_REFRESH_COOLDOWN_HOURS = max(1, int(os.getenv("ODDS_REFRESH_COOLDOWN_HOURS", "24")))
 
-# 每個聯盟 1 次 API（regions=eu, markets=h2h）= 1 credit
+# 每個聯盟 1 次 API（regions=eu, markets=h2h,spreads,totals）= 1 credit
 ODDS_API_FEEDS = [
-    {"key": "soccer_epl", "sport": "足球", "league": "英超"},
-    {"key": "soccer_spain_la_liga", "sport": "足球", "league": "西甲"},
-    {"key": "soccer_germany_bundesliga", "sport": "足球", "league": "德甲"},
-    {"key": "soccer_fifa_world_cup", "sport": "世界盃", "league": "世界盃"},
-    {"key": "basketball_nba", "sport": "籃球", "league": "NBA"},
     {"key": "baseball_mlb", "sport": "棒球", "league": "MLB"},
+    {"key": "basketball_nba", "sport": "籃球", "league": "NBA"},
+    {"key": "soccer_fifa_world_cup", "sport": "世界盃", "league": "世界盃"},
 ]
 
 STATUS_LIVE = "進行中"

@@ -172,7 +172,7 @@ class ImportDataRequest(BaseModel):
 
 def refresh_match_cache():
     global MATCH_CACHE
-    # 只讀快取，不在啟動時自動打 API（Render 休眠重啟會反覆扣 6 次額度）
+    # 只讀快取，不在啟動時自動打 API（Render 休眠重啟會反覆扣 API 額度）
     MATCH_CACHE = load_all_matches()
 
 

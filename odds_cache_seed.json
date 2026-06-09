@@ -1,12 +1,508 @@
 {
-  "saved_at": "2026-06-08T21:21:34.378767",
+  "saved_at": "2026-06-09T17:26:16.431594",
   "meta": {
     "status": "OK",
-    "requests_remaining": 94,
-    "requests_used": 406,
+    "requests_remaining": 67,
+    "requests_used": 433,
     "provider": "The Odds API"
   },
   "matches": [
+    {
+      "id": "odds-1ca04df3ce70b1f02075d8e4a5b2cb52",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "06:36",
+      "home": "巴爾的摩金鶯",
+      "away": "西雅圖水手",
+      "homeEn": "Baltimore Orioles",
+      "awayEn": "Seattle Mariners",
+      "odds": {
+        "home": 2.05,
+        "draw": 12.0,
+        "away": 1.86
+      },
+      "spreads": {
+        "home": 1.65,
+        "away": 2.35,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 2.0,
+        "point": 8.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-c4d4cce67008409b6416dc0e03e55471",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "06:41",
+      "home": "邁阿密馬林魚",
+      "away": "亞利桑那響尾蛇",
+      "homeEn": "Miami Marlins",
+      "awayEn": "Arizona Diamondbacks",
+      "odds": {
+        "home": 1.78,
+        "draw": 12.0,
+        "away": 2.17
+      },
+      "spreads": {
+        "home": 2.65,
+        "away": 1.53,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.91,
+        "under": 1.91,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-b227664a56bdeff1970b8f4a2b3073fe",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "06:41",
+      "home": "坦帕灣光芒",
+      "away": "波士頓紅襪",
+      "homeEn": "Tampa Bay Rays",
+      "awayEn": "Boston Red Sox",
+      "odds": {
+        "home": 1.96,
+        "draw": 12.0,
+        "away": 1.94
+      },
+      "spreads": {
+        "home": 2.86,
+        "away": 1.45,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 2.05,
+        "under": 1.8,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-6f233a34a63975436f2e7894b5860b90",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "06:41",
+      "home": "克里夫蘭守護者",
+      "away": "紐約洋基",
+      "homeEn": "Cleveland Guardians",
+      "awayEn": "New York Yankees",
+      "odds": {
+        "home": 2.15,
+        "draw": 12.0,
+        "away": 1.79
+      },
+      "spreads": {
+        "home": 1.71,
+        "away": 2.2,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 1.78,
+        "under": 2.08,
+        "point": 8.0
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-f03156629a6e1e4d346ffc42fb0c0bdf",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "06:41",
+      "home": "底特律老虎",
+      "away": "明尼蘇達雙城",
+      "homeEn": "Detroit Tigers",
+      "awayEn": "Minnesota Twins",
+      "odds": {
+        "home": 1.78,
+        "draw": 12.0,
+        "away": 2.16
+      },
+      "spreads": {
+        "home": 2.7,
+        "away": 1.51,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.95,
+        "under": 1.87,
+        "point": 8.0
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-5122e6331d2fde8deffb8ad28d89af2d",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "06:41",
+      "home": "匹茲堡海盜",
+      "away": "洛杉磯道奇",
+      "homeEn": "Pittsburgh Pirates",
+      "awayEn": "Los Angeles Dodgers",
+      "odds": {
+        "home": 1.89,
+        "draw": 12.0,
+        "away": 2.02
+      },
+      "spreads": {
+        "home": 2.83,
+        "away": 1.47,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.79,
+        "under": 2.06,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-65036e67b5aea5d1efb20c275381e2c4",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "07:08",
+      "home": "多倫多藍鳥",
+      "away": "費城費城人",
+      "homeEn": "Toronto Blue Jays",
+      "awayEn": "Philadelphia Phillies",
+      "odds": {
+        "home": 1.91,
+        "draw": 12.0,
+        "away": 1.85
+      },
+      "spreads": {
+        "home": 1.53,
+        "away": 2.5,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 2.0,
+        "under": 1.8,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-d4b1fc2e508af0ab9a2ac9381656c269",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "07:11",
+      "home": "紐約大都會",
+      "away": "聖路易紅雀",
+      "homeEn": "New York Mets",
+      "awayEn": "St. Louis Cardinals",
+      "odds": {
+        "home": 1.78,
+        "draw": 12.0,
+        "away": 2.16
+      },
+      "spreads": {
+        "home": 2.57,
+        "away": 1.56,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 2.0,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-e35247af0713e982e58edd85657dbae9",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "07:41",
+      "home": "芝加哥白襪",
+      "away": "亞特蘭大勇士",
+      "homeEn": "Chicago White Sox",
+      "awayEn": "Atlanta Braves",
+      "odds": {
+        "home": 2.3,
+        "draw": 12.0,
+        "away": 1.62
+      },
+      "spreads": {
+        "home": 1.75,
+        "away": 2.05,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 2.05,
+        "under": 1.75,
+        "point": 9.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-27f5837fda858059318115b8f615ce81",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "07:41",
+      "home": "堪薩斯市皇家",
+      "away": "德州遊騎兵",
+      "homeEn": "Kansas City Royals",
+      "awayEn": "Texas Rangers",
+      "odds": {
+        "home": 2.06,
+        "draw": 12.0,
+        "away": 1.85
+      },
+      "spreads": {
+        "home": 1.67,
+        "away": 2.3,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 1.8,
+        "under": 2.05,
+        "point": 9.0
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-3b917225da82c6c937c963aa47187645",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "08:41",
+      "home": "科羅拉多落磯",
+      "away": "芝加哥小熊",
+      "homeEn": "Colorado Rockies",
+      "awayEn": "Chicago Cubs",
+      "odds": {
+        "home": 2.33,
+        "draw": 12.0,
+        "away": 1.68
+      },
+      "spreads": {
+        "home": 1.88,
+        "away": 1.94,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 1.8,
+        "under": 2.05,
+        "point": 12.0
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-2d3e8521a55eeeae51961cf0d8ebd6c6",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "09:39",
+      "home": "洛杉磯天使",
+      "away": "休士頓太空人",
+      "homeEn": "Los Angeles Angels",
+      "awayEn": "Houston Astros",
+      "odds": {
+        "home": 2.13,
+        "draw": 12.0,
+        "away": 1.8
+      },
+      "spreads": {
+        "home": 1.65,
+        "away": 2.35,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 1.91,
+        "under": 1.91,
+        "point": 8.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-e2d199125ede80ca2e35bc0c0669f294",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "09:41",
+      "home": "聖地牙哥教士",
+      "away": "辛辛那提紅人",
+      "homeEn": "San Diego Padres",
+      "awayEn": "Cincinnati Reds",
+      "odds": {
+        "home": 2.08,
+        "draw": 12.0,
+        "away": 1.84
+      },
+      "spreads": {
+        "home": 1.59,
+        "away": 2.49,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 2.05,
+        "under": 1.8,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-f2761470e60cb7a1fa947535ccba356f",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "09:46",
+      "home": "舊金山巨人",
+      "away": "華盛頓國民",
+      "homeEn": "San Francisco Giants",
+      "awayEn": "Washington Nationals",
+      "odds": {
+        "home": 1.93,
+        "draw": 12.0,
+        "away": 1.97
+      },
+      "spreads": {
+        "home": 2.83,
+        "away": 1.47,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.8,
+        "under": 2.05,
+        "point": 8.0
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-53115c407b5594a84cae2269c1005ab0",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-06-10",
+      "status": "即將開賽",
+      "time": "10:06",
+      "home": "奧克蘭運動家",
+      "away": "密爾瓦基釀酒人",
+      "homeEn": "Athletics",
+      "awayEn": "Milwaukee Brewers",
+      "odds": {
+        "home": 1.99,
+        "draw": 12.0,
+        "away": 1.92
+      },
+      "spreads": {
+        "home": 1.68,
+        "away": 2.28,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 1.79,
+        "under": 2.07,
+        "point": 12.0
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-9ea306ebbe68ff94dfa5b88d1e250b37",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-06-11",
+      "status": "即將開賽",
+      "time": "08:40",
+      "home": "紐約尼克",
+      "away": "聖安東尼奧馬刺",
+      "homeEn": "New York Knicks",
+      "awayEn": "San Antonio Spurs",
+      "odds": {
+        "home": 1.8,
+        "draw": 12.0,
+        "away": 2.14
+      },
+      "spreads": {
+        "home": 1.92,
+        "away": 2.0,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.92,
+        "under": 2.0,
+        "point": 216.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
     {
       "id": "odds-80d82d1113934bfbea4ce8daf37a2433",
       "sport": "世界盃",
@@ -20,19 +516,19 @@
       "homeEn": "Mexico",
       "awayEn": "South Africa",
       "odds": {
-        "home": 1.43,
-        "draw": 4.5,
-        "away": 9.1
+        "home": 1.42,
+        "draw": 4.55,
+        "away": 9.3
       },
       "spreads": {
-        "home": 2.05,
-        "away": 1.86,
+        "home": 2.04,
+        "away": 1.87,
         "homePoint": -1.25,
         "awayPoint": 1.25
       },
       "totals": {
-        "over": 1.95,
-        "under": 1.93,
+        "over": 1.93,
+        "under": 1.95,
         "point": 2.25
       },
       "market": "獨贏",
@@ -56,8 +552,8 @@
         "away": 2.93
       },
       "spreads": {
-        "home": 1.87,
-        "away": 2.04,
+        "home": 1.85,
+        "away": 2.06,
         "homePoint": 0.0,
         "awayPoint": -0.0
       },
@@ -82,9 +578,9 @@
       "homeEn": "Canada",
       "awayEn": "Bosnia & Herzegovina",
       "odds": {
-        "home": 1.83,
-        "draw": 3.65,
-        "away": 4.6
+        "home": 1.75,
+        "draw": 3.8,
+        "away": 4.9
       },
       "spreads": {
         "home": 1.83,
@@ -93,8 +589,8 @@
         "awayPoint": 0.5
       },
       "totals": {
-        "over": 2.2,
-        "under": 1.64,
+        "over": 2.07,
+        "under": 1.72,
         "point": 2.5
       },
       "market": "獨贏",
@@ -113,19 +609,19 @@
       "homeEn": "USA",
       "awayEn": "Paraguay",
       "odds": {
-        "home": 2.02,
-        "draw": 3.48,
+        "home": 2.01,
+        "draw": 3.52,
         "away": 4.0
       },
       "spreads": {
-        "home": 2.01,
-        "away": 1.9,
+        "home": 2.0,
+        "away": 1.91,
         "homePoint": -0.5,
         "awayPoint": 0.5
       },
       "totals": {
-        "over": 2.07,
-        "under": 1.83,
+        "over": 2.02,
+        "under": 1.87,
         "point": 2.25
       },
       "market": "獨贏",
@@ -144,9 +640,9 @@
       "homeEn": "Qatar",
       "awayEn": "Switzerland",
       "odds": {
-        "home": 14.0,
-        "draw": 6.25,
-        "away": 1.23
+        "home": 15.0,
+        "draw": 6.5,
+        "away": 1.22
       },
       "spreads": {
         "home": 2.25,
@@ -155,8 +651,8 @@
         "awayPoint": -1.5
       },
       "totals": {
-        "over": 1.62,
-        "under": 2.23,
+        "over": 1.66,
+        "under": 2.16,
         "point": 2.5
       },
       "market": "獨贏",
@@ -206,19 +702,19 @@
       "homeEn": "Haiti",
       "awayEn": "Scotland",
       "odds": {
-        "home": 6.65,
-        "draw": 4.55,
-        "away": 1.51
+        "home": 6.25,
+        "draw": 4.4,
+        "away": 1.55
       },
       "spreads": {
-        "home": 2.04,
-        "away": 1.87,
+        "home": 1.96,
+        "away": 1.94,
         "homePoint": 1.0,
         "awayPoint": -1.0
       },
       "totals": {
-        "over": 1.91,
-        "under": 1.98,
+        "over": 1.92,
+        "under": 1.97,
         "point": 2.5
       },
       "market": "獨贏",
@@ -237,9 +733,9 @@
       "homeEn": "Australia",
       "awayEn": "Turkey",
       "odds": {
-        "home": 4.75,
-        "draw": 3.75,
-        "away": 1.8
+        "home": 5.0,
+        "draw": 3.85,
+        "away": 1.75
       },
       "spreads": {
         "home": 2.1,
@@ -269,18 +765,18 @@
       "awayEn": "Curaçao",
       "odds": {
         "home": 1.05,
-        "draw": 16.5,
-        "away": 61.0
+        "draw": 16.25,
+        "away": 56.0
       },
       "spreads": {
-        "home": 1.94,
-        "away": 1.9,
-        "homePoint": -3.5,
-        "awayPoint": 3.5
+        "home": 1.83,
+        "away": 2.02,
+        "homePoint": -3.25,
+        "awayPoint": 3.25
       },
       "totals": {
-        "over": 1.93,
-        "under": 1.9,
+        "over": 2.0,
+        "under": 1.84,
         "point": 4.25
       },
       "market": "獨贏",
@@ -299,19 +795,19 @@
       "homeEn": "Netherlands",
       "awayEn": "Japan",
       "odds": {
-        "home": 1.99,
-        "draw": 3.68,
+        "home": 2.01,
+        "draw": 3.62,
         "away": 3.88
       },
       "spreads": {
-        "home": 2.02,
-        "away": 1.89,
+        "home": 2.08,
+        "away": 1.84,
         "homePoint": -0.5,
         "awayPoint": 0.5
       },
       "totals": {
-        "over": 1.99,
-        "under": 1.9,
+        "over": 2.0,
+        "under": 1.89,
         "point": 2.5
       },
       "market": "獨贏",
@@ -330,13 +826,13 @@
       "homeEn": "Ivory Coast",
       "awayEn": "Ecuador",
       "odds": {
-        "home": 3.72,
-        "draw": 2.81,
-        "away": 2.45
+        "home": 3.65,
+        "draw": 2.82,
+        "away": 2.47
       },
       "spreads": {
-        "home": 1.88,
-        "away": 2.04,
+        "home": 1.85,
+        "away": 2.06,
         "homePoint": 0.25,
         "awayPoint": -0.25
       },
@@ -361,9 +857,9 @@
       "homeEn": "Sweden",
       "awayEn": "Tunisia",
       "odds": {
-        "home": 1.92,
-        "draw": 3.54,
-        "away": 4.4
+        "home": 1.93,
+        "draw": 3.52,
+        "away": 4.35
       },
       "spreads": {
         "home": 1.93,
@@ -397,7 +893,7 @@
         "away": 27.0
       },
       "spreads": {
-        "home": 1.89,
+        "home": 1.88,
         "away": 1.96,
         "homePoint": -2.5,
         "awayPoint": 2.5
@@ -454,19 +950,19 @@
       "homeEn": "Saudi Arabia",
       "awayEn": "Uruguay",
       "odds": {
-        "home": 7.5,
-        "draw": 4.33,
-        "away": 1.5
+        "home": 8.5,
+        "draw": 4.55,
+        "away": 1.44
       },
       "spreads": {
-        "home": 2.08,
-        "away": 1.84,
-        "homePoint": 1.0,
-        "awayPoint": -1.0
+        "home": 1.88,
+        "away": 2.03,
+        "homePoint": 1.25,
+        "awayPoint": -1.25
       },
       "totals": {
-        "over": 2.05,
-        "under": 1.85,
+        "over": 2.02,
+        "under": 1.87,
         "point": 2.5
       },
       "market": "獨贏",
@@ -485,19 +981,19 @@
       "homeEn": "Iran",
       "awayEn": "New Zealand",
       "odds": {
-        "home": 1.92,
+        "home": 1.91,
         "draw": 3.47,
-        "away": 4.46
+        "away": 4.47
       },
       "spreads": {
-        "home": 1.93,
-        "away": 1.98,
+        "home": 1.92,
+        "away": 1.99,
         "homePoint": -0.5,
         "awayPoint": 0.5
       },
       "totals": {
         "over": 2.09,
-        "under": 1.81,
+        "under": 1.82,
         "point": 2.25
       },
       "market": "獨贏",
@@ -547,9 +1043,9 @@
       "homeEn": "Iraq",
       "awayEn": "Norway",
       "odds": {
-        "home": 15.0,
+        "home": 16.0,
         "draw": 6.75,
-        "away": 1.23
+        "away": 1.22
       },
       "spreads": {
         "home": 2.09,
@@ -609,8 +1105,8 @@
       "homeEn": "Austria",
       "awayEn": "Jordan",
       "odds": {
-        "home": 1.32,
-        "draw": 5.6,
+        "home": 1.3,
+        "draw": 5.8,
         "away": 10.0
       },
       "spreads": {
@@ -620,8 +1116,8 @@
         "awayPoint": 1.5
       },
       "totals": {
-        "over": 1.55,
-        "under": 2.38,
+        "over": 1.54,
+        "under": 2.4,
         "point": 2.5
       },
       "market": "獨贏",
@@ -641,7 +1137,7 @@
       "awayEn": "DR Congo",
       "odds": {
         "home": 1.27,
-        "draw": 6.0,
+        "draw": 5.8,
         "away": 12.0
       },
       "spreads": {
@@ -651,8 +1147,8 @@
         "awayPoint": 1.5
       },
       "totals": {
-        "over": 1.62,
-        "under": 2.23,
+        "over": 1.61,
+        "under": 2.25,
         "point": 2.5
       },
       "market": "獨贏",
@@ -676,7 +1172,7 @@
         "away": 4.95
       },
       "spreads": {
-        "home": 1.99,
+        "home": 1.98,
         "away": 1.92,
         "homePoint": -0.75,
         "awayPoint": 0.75
@@ -702,9 +1198,9 @@
       "homeEn": "Ghana",
       "awayEn": "Panama",
       "odds": {
-        "home": 2.06,
-        "draw": 3.62,
-        "away": 3.7
+        "home": 2.05,
+        "draw": 3.64,
+        "away": 3.72
       },
       "spreads": {
         "home": 2.09,
@@ -738,7 +1234,7 @@
         "away": 1.43
       },
       "spreads": {
-        "home": 1.89,
+        "home": 1.9,
         "away": 2.01,
         "homePoint": 1.25,
         "awayPoint": -1.25
@@ -826,9 +1322,9 @@
       "homeEn": "Canada",
       "awayEn": "Qatar",
       "odds": {
-        "home": 1.28,
-        "draw": 4.7,
-        "away": 8.0
+        "home": 1.26,
+        "draw": 4.9,
+        "away": 8.5
       },
       "spreads": {
         "home": 1.98,
@@ -862,8 +1358,8 @@
         "away": 4.8
       },
       "spreads": {
-        "home": 1.81,
-        "away": 1.97,
+        "home": 1.8,
+        "away": 1.98,
         "homePoint": -0.5,
         "awayPoint": 0.5
       },
@@ -888,7 +1384,7 @@
       "homeEn": "USA",
       "awayEn": "Australia",
       "odds": {
-        "home": 1.75,
+        "home": 1.77,
         "draw": 4.1,
         "away": 4.7
       },
@@ -924,8 +1420,8 @@
         "away": 1.9
       },
       "spreads": {
-        "home": 1.79,
-        "away": 1.99,
+        "home": 1.8,
+        "away": 1.98,
         "homePoint": 0.5,
         "awayPoint": -0.5
       },
@@ -1012,9 +1508,9 @@
       "homeEn": "Netherlands",
       "awayEn": "Sweden",
       "odds": {
-        "home": 1.66,
-        "draw": 3.85,
-        "away": 5.25
+        "home": 1.65,
+        "draw": 3.95,
+        "away": 5.3
       },
       "spreads": {
         "home": 1.61,
@@ -1054,8 +1550,8 @@
         "awayPoint": 0.5
       },
       "totals": {
-        "over": 1.71,
-        "under": 1.85,
+        "over": 1.72,
+        "under": 1.83,
         "point": 2.5
       },
       "market": "獨贏",
@@ -1105,9 +1601,9 @@
       "homeEn": "Tunisia",
       "awayEn": "Japan",
       "odds": {
-        "home": 4.9,
+        "home": 5.1,
         "draw": 3.6,
-        "away": 1.75
+        "away": 1.74
       },
       "spreads": {
         "home": 2.02,
@@ -1116,8 +1612,8 @@
         "awayPoint": -0.5
       },
       "totals": {
-        "over": 2.06,
-        "under": 1.56,
+        "over": 2.08,
+        "under": 1.55,
         "point": 2.5
       },
       "market": "獨贏",
@@ -1137,8 +1633,8 @@
       "awayEn": "Saudi Arabia",
       "odds": {
         "home": 1.09,
-        "draw": 10.6,
-        "away": 30.0
+        "draw": 10.9,
+        "away": 29.0
       },
       "spreads": {
         "home": 2.03,
@@ -1234,10 +1730,10 @@
         "away": 1.72
       },
       "spreads": {
-        "home": 1.11,
-        "away": 6.36,
-        "homePoint": 2.5,
-        "awayPoint": -2.5
+        "home": 1.34,
+        "away": 3.21,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
       },
       "totals": {
         "over": 2.05,
@@ -1296,7 +1792,7 @@
         "away": 21.0
       },
       "spreads": {
-        "home": 2.13,
+        "home": 2.06,
         "away": 1.69,
         "homePoint": -2.5,
         "awayPoint": 2.5
@@ -1358,10 +1854,10 @@
         "away": 1.55
       },
       "spreads": {
-        "home": 1.49,
-        "away": 2.57,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
+        "home": 2.43,
+        "away": 1.54,
+        "homePoint": 0.5,
+        "awayPoint": -0.5
       },
       "totals": {
         "over": 1.88,
@@ -1395,9 +1891,9 @@
         "awayPoint": 1.5
       },
       "totals": {
-        "over": 2.25,
-        "under": 1.47,
-        "point": 3.5
+        "over": 1.45,
+        "under": 2.28,
+        "point": 2.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
@@ -1602,12 +2098,12 @@
       "awayEn": "Haiti",
       "odds": {
         "home": 1.3,
-        "draw": 5.0,
-        "away": 8.5
+        "draw": 4.8,
+        "away": 9.0
       },
       "spreads": {
-        "home": 1.81,
-        "away": 1.96,
+        "home": 1.82,
+        "away": 1.95,
         "homePoint": -1.5,
         "awayPoint": 1.5
       },
@@ -1638,7 +2134,7 @@
       },
       "spreads": {
         "home": 1.32,
-        "away": 3.32,
+        "away": 3.28,
         "homePoint": 1.5,
         "awayPoint": -1.5
       },
@@ -1699,8 +2195,8 @@
         "away": 1.16
       },
       "spreads": {
-        "home": 2.13,
-        "away": 1.69,
+        "home": 2.15,
+        "away": 1.68,
         "homePoint": 1.5,
         "awayPoint": -1.5
       },
@@ -1916,10 +2412,10 @@
         "away": 6.94
       },
       "spreads": {
-        "home": 2.31,
-        "away": 1.59,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
+        "home": 4.27,
+        "away": 1.21,
+        "homePoint": -2.5,
+        "awayPoint": 2.5
       },
       "totals": {
         "over": 1.91,
@@ -2040,8 +2536,8 @@
         "away": 3.62
       },
       "spreads": {
-        "home": 2.26,
-        "away": 1.62,
+        "home": 2.24,
+        "away": 1.63,
         "homePoint": -0.5,
         "awayPoint": 0.5
       },
@@ -2128,8 +2624,8 @@
       "homeEn": "Colombia",
       "awayEn": "Portugal",
       "odds": {
-        "home": 3.4,
-        "draw": 3.25,
+        "home": 3.55,
+        "draw": 3.3,
         "away": 2.14
       },
       "spreads": {
@@ -2139,8 +2635,8 @@
         "awayPoint": -0.5
       },
       "totals": {
-        "over": 2.15,
-        "under": 1.66,
+        "over": 2.02,
+        "under": 1.76,
         "point": 2.5
       },
       "market": "獨贏",
@@ -2164,8 +2660,8 @@
         "away": 2.8
       },
       "spreads": {
-        "home": 2.24,
-        "away": 1.63,
+        "home": 2.28,
+        "away": 1.61,
         "homePoint": -0.5,
         "awayPoint": 0.5
       },
@@ -2190,19 +2686,19 @@
       "homeEn": "Algeria",
       "awayEn": "Austria",
       "odds": {
-        "home": 2.9,
-        "draw": 2.9,
-        "away": 2.0
+        "home": 2.95,
+        "draw": 2.85,
+        "away": 1.98
       },
       "spreads": {
-        "home": 1.62,
-        "away": 2.26,
+        "home": 1.67,
+        "away": 2.17,
         "homePoint": 0.5,
         "awayPoint": -0.5
       },
       "totals": {
-        "over": 2.17,
-        "under": 1.66,
+        "over": 2.1,
+        "under": 1.71,
         "point": 2.5
       },
       "market": "獨贏",
@@ -2235,285 +2731,6 @@
         "over": 1.56,
         "under": 2.3,
         "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-0707c5b20ff523e730c85090c7faffdf",
-      "sport": "籃球",
-      "league": "美國職籃",
-      "leagueEn": "NBA",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "08:40",
-      "home": "紐約尼克",
-      "away": "聖安東尼奧馬刺",
-      "homeEn": "New York Knicks",
-      "awayEn": "San Antonio Spurs",
-      "odds": {
-        "home": 1.77,
-        "draw": 12.0,
-        "away": 2.12
-      },
-      "spreads": {
-        "home": 1.93,
-        "away": 1.88,
-        "homePoint": -2.5,
-        "awayPoint": 2.5
-      },
-      "totals": {
-        "over": 1.89,
-        "under": 1.92,
-        "point": 215.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-b0255c634de25907419670a9c90426df",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "06:36",
-      "home": "巴爾的摩金鶯",
-      "away": "西雅圖水手",
-      "homeEn": "Baltimore Orioles",
-      "awayEn": "Seattle Mariners",
-      "odds": {
-        "home": 2.08,
-        "draw": 12.0,
-        "away": 1.73
-      },
-      "spreads": {
-        "home": 1.65,
-        "away": 2.25,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.75,
-        "under": 2.05,
-        "point": 8.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-87558be021f78a36a8dcb85a79893dce",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "06:41",
-      "home": "坦帕灣光芒",
-      "away": "波士頓紅襪",
-      "homeEn": "Tampa Bay Rays",
-      "awayEn": "Boston Red Sox",
-      "odds": {
-        "home": 2.0,
-        "draw": 12.0,
-        "away": 1.8
-      },
-      "spreads": {
-        "home": 1.57,
-        "away": 2.4,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.8,
-        "under": 2.0,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-aacad21e4cf94bd96bfde87b691ba8d1",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "06:41",
-      "home": "克里夫蘭守護者",
-      "away": "紐約洋基",
-      "homeEn": "Cleveland Guardians",
-      "awayEn": "New York Yankees",
-      "odds": {
-        "home": 1.8,
-        "draw": 12.0,
-        "away": 2.0
-      },
-      "spreads": {
-        "home": 1.47,
-        "away": 2.65,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.8,
-        "under": 2.0,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-fe4a6df006bf19b0c063b0188fa7361b",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "07:08",
-      "home": "多倫多藍鳥",
-      "away": "費城費城人",
-      "homeEn": "Toronto Blue Jays",
-      "awayEn": "Philadelphia Phillies",
-      "odds": {
-        "home": 2.5,
-        "draw": 12.0,
-        "away": 1.53
-      },
-      "spreads": {
-        "home": 1.85,
-        "away": 1.91,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.91,
-        "under": 1.85,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-2db8cf8a50192fbf63e1f9018a3c1ec9",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "09:39",
-      "home": "洛杉磯天使",
-      "away": "休士頓太空人",
-      "homeEn": "Los Angeles Angels",
-      "awayEn": "Houston Astros",
-      "odds": {
-        "home": 2.1,
-        "draw": 12.0,
-        "away": 1.73
-      },
-      "spreads": {
-        "home": 1.65,
-        "away": 2.25,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.73,
-        "under": 2.1,
-        "point": 8.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-5c40929fe0ca745e1c3103242f9f25de",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "09:41",
-      "home": "聖地牙哥教士",
-      "away": "辛辛那提紅人",
-      "homeEn": "San Diego Padres",
-      "awayEn": "Cincinnati Reds",
-      "odds": {
-        "home": 1.71,
-        "draw": 12.0,
-        "away": 2.15
-      },
-      "spreads": {
-        "home": 2.45,
-        "away": 1.53,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.75,
-        "under": 2.05,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-572962f6837758b62d98ab379bcbe3c5",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "09:46",
-      "home": "舊金山巨人",
-      "away": "華盛頓國民",
-      "homeEn": "San Francisco Giants",
-      "awayEn": "Washington Nationals",
-      "odds": {
-        "home": 1.6,
-        "draw": 12.0,
-        "away": 2.35
-      },
-      "spreads": {
-        "home": 2.25,
-        "away": 1.65,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.75,
-        "under": 2.05,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-1c106a5918ccf59c350e476c157af1fe",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-09",
-      "status": "即將開賽",
-      "time": "10:06",
-      "home": "奧克蘭運動家",
-      "away": "密爾瓦基釀酒人",
-      "homeEn": "Athletics",
-      "awayEn": "Milwaukee Brewers",
-      "odds": {
-        "home": 2.3,
-        "draw": 12.0,
-        "away": 1.62
-      },
-      "spreads": {
-        "home": 1.85,
-        "away": 1.91,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.75,
-        "under": 2.05,
-        "point": 10.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
