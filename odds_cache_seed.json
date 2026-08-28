@@ -1,148 +1,179 @@
 {
-  "saved_at": "2026-06-09T17:26:16.431594",
+  "saved_at": "2026-08-28T13:34:55.390180",
   "meta": {
     "status": "OK",
-    "requests_remaining": 67,
-    "requests_used": 433,
+    "requests_remaining": 449,
+    "requests_used": 51,
     "provider": "The Odds API"
   },
   "matches": [
     {
-      "id": "odds-1ca04df3ce70b1f02075d8e4a5b2cb52",
+      "id": "odds-a6d63d072ba391db5be1a628a064656c",
       "sport": "棒球",
       "league": "美國職棒",
       "leagueEn": "MLB",
-      "date": "2026-06-10",
+      "date": "2026-08-29",
       "status": "即將開賽",
-      "time": "06:36",
-      "home": "巴爾的摩金鶯",
-      "away": "西雅圖水手",
-      "homeEn": "Baltimore Orioles",
-      "awayEn": "Seattle Mariners",
+      "time": "02:21",
+      "home": "芝加哥小熊",
+      "away": "辛辛那提紅人",
+      "homeEn": "Chicago Cubs",
+      "awayEn": "Cincinnati Reds",
       "odds": {
-        "home": 2.05,
+        "home": 1.53,
         "draw": 12.0,
-        "away": 1.86
+        "away": 2.71
       },
       "spreads": {
-        "home": 1.65,
-        "away": 2.35,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
+        "home": 2.1,
+        "away": 1.73,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
       },
       "totals": {
-        "over": 1.83,
-        "under": 2.0,
+        "over": 2.0,
+        "under": 1.8,
         "point": 8.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-c4d4cce67008409b6416dc0e03e55471",
+      "id": "odds-bb28f14c5f48561498ab3fabd1ebf47b",
       "sport": "棒球",
       "league": "美國職棒",
       "leagueEn": "MLB",
-      "date": "2026-06-10",
+      "date": "2026-08-29",
       "status": "即將開賽",
       "time": "06:41",
-      "home": "邁阿密馬林魚",
-      "away": "亞利桑那響尾蛇",
-      "homeEn": "Miami Marlins",
-      "awayEn": "Arizona Diamondbacks",
+      "home": "底特律老虎",
+      "away": "洛杉磯道奇",
+      "homeEn": "Detroit Tigers",
+      "awayEn": "Los Angeles Dodgers",
       "odds": {
-        "home": 1.78,
+        "home": 2.84,
         "draw": 12.0,
-        "away": 2.17
+        "away": 1.49
       },
       "spreads": {
-        "home": 2.65,
-        "away": 1.53,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.91,
-        "under": 1.91,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-b227664a56bdeff1970b8f4a2b3073fe",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-10",
-      "status": "即將開賽",
-      "time": "06:41",
-      "home": "坦帕灣光芒",
-      "away": "波士頓紅襪",
-      "homeEn": "Tampa Bay Rays",
-      "awayEn": "Boston Red Sox",
-      "odds": {
-        "home": 1.96,
-        "draw": 12.0,
-        "away": 1.94
-      },
-      "spreads": {
-        "home": 2.86,
-        "away": 1.45,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 2.05,
-        "under": 1.8,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-6f233a34a63975436f2e7894b5860b90",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-10",
-      "status": "即將開賽",
-      "time": "06:41",
-      "home": "克里夫蘭守護者",
-      "away": "紐約洋基",
-      "homeEn": "Cleveland Guardians",
-      "awayEn": "New York Yankees",
-      "odds": {
-        "home": 2.15,
-        "draw": 12.0,
-        "away": 1.79
-      },
-      "spreads": {
-        "home": 1.71,
-        "away": 2.2,
+        "home": 2.0,
+        "away": 1.83,
         "homePoint": 1.5,
         "awayPoint": -1.5
       },
       "totals": {
-        "over": 1.78,
-        "under": 2.08,
-        "point": 8.0
+        "over": 2.0,
+        "under": 1.83,
+        "point": 7.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-f03156629a6e1e4d346ffc42fb0c0bdf",
+      "id": "odds-1d34c8ba40aec1ca9cadb1ff7ef37e42",
       "sport": "棒球",
       "league": "美國職棒",
       "leagueEn": "MLB",
-      "date": "2026-06-10",
+      "date": "2026-08-29",
       "status": "即將開賽",
-      "time": "06:41",
-      "home": "底特律老虎",
-      "away": "明尼蘇達雙城",
-      "homeEn": "Detroit Tigers",
-      "awayEn": "Minnesota Twins",
+      "time": "06:46",
+      "home": "華盛頓國民",
+      "away": "邁阿密馬林魚",
+      "homeEn": "Washington Nationals",
+      "awayEn": "Miami Marlins",
+      "odds": {
+        "home": 2.31,
+        "draw": 12.0,
+        "away": 1.69
+      },
+      "spreads": {
+        "home": 1.74,
+        "away": 2.15,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 2.0,
+        "under": 1.83,
+        "point": 8.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-fab839164ecf4aec65df50e5ee9bbed3",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-08-29",
+      "status": "即將開賽",
+      "time": "07:11",
+      "home": "克里夫蘭守護者",
+      "away": "堪薩斯市皇家",
+      "homeEn": "Cleveland Guardians",
+      "awayEn": "Kansas City Royals",
+      "odds": {
+        "home": 1.71,
+        "draw": 12.0,
+        "away": 2.15
+      },
+      "spreads": {
+        "home": 2.55,
+        "away": 1.5,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.8,
+        "under": 2.0,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-233ffa284e1672e4866733dd85fac3e5",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-08-29",
+      "status": "即將開賽",
+      "time": "07:11",
+      "home": "紐約大都會",
+      "away": "休士頓太空人",
+      "homeEn": "New York Mets",
+      "awayEn": "Houston Astros",
+      "odds": {
+        "home": 2.05,
+        "draw": 12.0,
+        "away": 1.75
+      },
+      "spreads": {
+        "home": 1.6,
+        "away": 2.35,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 1.8,
+        "under": 2.0,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-0b16c66db57136bcbe0cb430b3315572",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-08-29",
+      "status": "即將開賽",
+      "time": "07:11",
+      "home": "坦帕灣光芒",
+      "away": "聖地牙哥教士",
+      "homeEn": "Tampa Bay Rays",
+      "awayEn": "San Diego Padres",
       "odds": {
         "home": 1.78,
         "draw": 12.0,
@@ -155,95 +186,95 @@
         "awayPoint": 1.5
       },
       "totals": {
-        "over": 1.95,
-        "under": 1.87,
+        "over": 1.91,
+        "under": 1.91,
+        "point": 7.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-6e66851b93b3cdcc4578b23ae9b93d6d",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-08-29",
+      "status": "即將開賽",
+      "time": "07:16",
+      "home": "亞特蘭大勇士",
+      "away": "科羅拉多落磯",
+      "homeEn": "Atlanta Braves",
+      "awayEn": "Colorado Rockies",
+      "odds": {
+        "home": 1.4,
+        "draw": 12.0,
+        "away": 2.85
+      },
+      "spreads": {
+        "home": 2.0,
+        "away": 1.8,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.8,
+        "under": 2.0,
+        "point": 8.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-2458fd8fd2cc9241175e46181d9b3066",
+      "sport": "棒球",
+      "league": "美國職棒",
+      "leagueEn": "MLB",
+      "date": "2026-08-29",
+      "status": "即將開賽",
+      "time": "07:16",
+      "home": "紐約洋基",
+      "away": "波士頓紅襪",
+      "homeEn": "New York Yankees",
+      "awayEn": "Boston Red Sox",
+      "odds": {
+        "home": 1.64,
+        "draw": 12.0,
+        "away": 2.42
+      },
+      "spreads": {
+        "home": 2.3,
+        "away": 1.67,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 2.05,
+        "under": 1.8,
         "point": 8.0
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-5122e6331d2fde8deffb8ad28d89af2d",
+      "id": "odds-57c478eb2e6623a9a63b654b20634fa1",
       "sport": "棒球",
       "league": "美國職棒",
       "leagueEn": "MLB",
-      "date": "2026-06-10",
+      "date": "2026-08-29",
       "status": "即將開賽",
-      "time": "06:41",
-      "home": "匹茲堡海盜",
-      "away": "洛杉磯道奇",
-      "homeEn": "Pittsburgh Pirates",
-      "awayEn": "Los Angeles Dodgers",
+      "time": "07:41",
+      "home": "密爾瓦基釀酒人",
+      "away": "德州遊騎兵",
+      "homeEn": "Milwaukee Brewers",
+      "awayEn": "Texas Rangers",
       "odds": {
-        "home": 1.89,
+        "home": 1.58,
         "draw": 12.0,
-        "away": 2.02
+        "away": 2.56
       },
       "spreads": {
-        "home": 2.83,
-        "away": 1.47,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.79,
-        "under": 2.06,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-65036e67b5aea5d1efb20c275381e2c4",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-10",
-      "status": "即將開賽",
-      "time": "07:08",
-      "home": "多倫多藍鳥",
-      "away": "費城費城人",
-      "homeEn": "Toronto Blue Jays",
-      "awayEn": "Philadelphia Phillies",
-      "odds": {
-        "home": 1.91,
-        "draw": 12.0,
-        "away": 1.85
-      },
-      "spreads": {
-        "home": 1.53,
-        "away": 2.5,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 2.0,
-        "under": 1.8,
-        "point": 7.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-d4b1fc2e508af0ab9a2ac9381656c269",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-10",
-      "status": "即將開賽",
-      "time": "07:11",
-      "home": "紐約大都會",
-      "away": "聖路易紅雀",
-      "homeEn": "New York Mets",
-      "awayEn": "St. Louis Cardinals",
-      "odds": {
-        "home": 1.78,
-        "draw": 12.0,
-        "away": 2.16
-      },
-      "spreads": {
-        "home": 2.57,
-        "away": 1.56,
+        "home": 2.25,
+        "away": 1.69,
         "homePoint": -1.5,
         "awayPoint": 1.5
       },
@@ -256,2481 +287,1378 @@
       "source": "the-odds-api"
     },
     {
-      "id": "odds-e35247af0713e982e58edd85657dbae9",
+      "id": "odds-58cbf4ef2d32ebf1fa4fa41564b795c0",
       "sport": "棒球",
       "league": "美國職棒",
       "leagueEn": "MLB",
-      "date": "2026-06-10",
+      "date": "2026-08-29",
       "status": "即將開賽",
-      "time": "07:41",
-      "home": "芝加哥白襪",
-      "away": "亞特蘭大勇士",
-      "homeEn": "Chicago White Sox",
-      "awayEn": "Atlanta Braves",
+      "time": "08:11",
+      "home": "明尼蘇達雙城",
+      "away": "芝加哥白襪",
+      "homeEn": "Minnesota Twins",
+      "awayEn": "Chicago White Sox",
       "odds": {
-        "home": 2.3,
+        "home": 1.9,
         "draw": 12.0,
-        "away": 1.62
+        "away": 2.01
       },
       "spreads": {
-        "home": 1.75,
-        "away": 2.05,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
+        "home": 2.74,
+        "away": 1.5,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
       },
       "totals": {
-        "over": 2.05,
-        "under": 1.75,
-        "point": 9.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-27f5837fda858059318115b8f615ce81",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-10",
-      "status": "即將開賽",
-      "time": "07:41",
-      "home": "堪薩斯市皇家",
-      "away": "德州遊騎兵",
-      "homeEn": "Kansas City Royals",
-      "awayEn": "Texas Rangers",
-      "odds": {
-        "home": 2.06,
-        "draw": 12.0,
-        "away": 1.85
-      },
-      "spreads": {
-        "home": 1.67,
-        "away": 2.3,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.8,
-        "under": 2.05,
+        "over": 1.91,
+        "under": 1.91,
         "point": 9.0
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-3b917225da82c6c937c963aa47187645",
+      "id": "odds-886fd41b6e8045d61119b579793ffbcc",
       "sport": "棒球",
       "league": "美國職棒",
       "leagueEn": "MLB",
-      "date": "2026-06-10",
+      "date": "2026-08-29",
       "status": "即將開賽",
-      "time": "08:41",
-      "home": "科羅拉多落磯",
-      "away": "芝加哥小熊",
-      "homeEn": "Colorado Rockies",
-      "awayEn": "Chicago Cubs",
+      "time": "08:16",
+      "home": "聖路易紅雀",
+      "away": "匹茲堡海盜",
+      "homeEn": "St. Louis Cardinals",
+      "awayEn": "Pittsburgh Pirates",
       "odds": {
-        "home": 2.33,
+        "home": 2.06,
         "draw": 12.0,
-        "away": 1.68
+        "away": 1.85
       },
       "spreads": {
-        "home": 1.88,
-        "away": 1.94,
+        "home": 1.56,
+        "away": 2.57,
         "homePoint": 1.5,
         "awayPoint": -1.5
       },
       "totals": {
         "over": 1.8,
         "under": 2.05,
-        "point": 12.0
+        "point": 7.0
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-2d3e8521a55eeeae51961cf0d8ebd6c6",
+      "id": "odds-36f6301129991d3a13de99fc29f5d4bf",
       "sport": "棒球",
       "league": "美國職棒",
       "leagueEn": "MLB",
-      "date": "2026-06-10",
+      "date": "2026-08-29",
       "status": "即將開賽",
       "time": "09:39",
       "home": "洛杉磯天使",
-      "away": "休士頓太空人",
+      "away": "費城費城人",
       "homeEn": "Los Angeles Angels",
-      "awayEn": "Houston Astros",
+      "awayEn": "Philadelphia Phillies",
       "odds": {
-        "home": 2.13,
+        "home": 2.21,
         "draw": 12.0,
-        "away": 1.8
+        "away": 1.75
       },
       "spreads": {
-        "home": 1.65,
-        "away": 2.35,
+        "home": 1.69,
+        "away": 2.25,
         "homePoint": 1.5,
         "awayPoint": -1.5
       },
       "totals": {
-        "over": 1.91,
-        "under": 1.91,
+        "over": 2.05,
+        "under": 1.8,
         "point": 8.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-e2d199125ede80ca2e35bc0c0669f294",
+      "id": "odds-94fdf397f1e71919d8a7a9db4c9f81d8",
       "sport": "棒球",
       "league": "美國職棒",
       "leagueEn": "MLB",
-      "date": "2026-06-10",
+      "date": "2026-08-29",
       "status": "即將開賽",
-      "time": "09:41",
-      "home": "聖地牙哥教士",
-      "away": "辛辛那提紅人",
-      "homeEn": "San Diego Padres",
-      "awayEn": "Cincinnati Reds",
+      "time": "10:16",
+      "home": "舊金山巨人",
+      "away": "亞利桑那響尾蛇",
+      "homeEn": "San Francisco Giants",
+      "awayEn": "Arizona Diamondbacks",
       "odds": {
-        "home": 2.08,
+        "home": 1.01,
         "draw": 12.0,
-        "away": 1.84
+        "away": 1.83
       },
       "spreads": {
-        "home": 1.59,
-        "away": 2.49,
+        "home": 1.6,
+        "away": 2.35,
         "homePoint": 1.5,
         "awayPoint": -1.5
       },
       "totals": {
-        "over": 2.05,
-        "under": 1.8,
+        "over": 1.85,
+        "under": 1.91,
         "point": 7.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-f2761470e60cb7a1fa947535ccba356f",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-10",
-      "status": "即將開賽",
-      "time": "09:46",
-      "home": "舊金山巨人",
-      "away": "華盛頓國民",
-      "homeEn": "San Francisco Giants",
-      "awayEn": "Washington Nationals",
-      "odds": {
-        "home": 1.93,
-        "draw": 12.0,
-        "away": 1.97
-      },
-      "spreads": {
-        "home": 2.83,
-        "away": 1.47,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.8,
-        "under": 2.05,
-        "point": 8.0
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-53115c407b5594a84cae2269c1005ab0",
-      "sport": "棒球",
-      "league": "美國職棒",
-      "leagueEn": "MLB",
-      "date": "2026-06-10",
-      "status": "即將開賽",
-      "time": "10:06",
-      "home": "奧克蘭運動家",
-      "away": "密爾瓦基釀酒人",
-      "homeEn": "Athletics",
-      "awayEn": "Milwaukee Brewers",
-      "odds": {
-        "home": 1.99,
-        "draw": 12.0,
-        "away": 1.92
-      },
-      "spreads": {
-        "home": 1.68,
-        "away": 2.28,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.79,
-        "under": 2.07,
-        "point": 12.0
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-9ea306ebbe68ff94dfa5b88d1e250b37",
+      "id": "odds-26b036ff107f3c658258eaf4a6f26228",
       "sport": "籃球",
       "league": "美國職籃",
       "leagueEn": "NBA",
-      "date": "2026-06-11",
+      "date": "2026-10-21",
       "status": "即將開賽",
-      "time": "08:40",
-      "home": "紐約尼克",
-      "away": "聖安東尼奧馬刺",
-      "homeEn": "New York Knicks",
-      "awayEn": "San Antonio Spurs",
+      "time": "03:00",
+      "home": "底特律活塞",
+      "away": "波士頓塞爾提克",
+      "homeEn": "Detroit Pistons",
+      "awayEn": "Boston Celtics",
       "odds": {
-        "home": 1.8,
+        "home": 1.83,
         "draw": 12.0,
-        "away": 2.14
+        "away": 2.0
       },
       "spreads": {
         "home": 1.92,
-        "away": 2.0,
+        "away": 1.89,
         "homePoint": -1.5,
         "awayPoint": 1.5
       },
       "totals": {
-        "over": 1.92,
-        "under": 2.0,
-        "point": 216.5
+        "over": 1.83,
+        "under": 1.8,
+        "point": 224.0
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-80d82d1113934bfbea4ce8daf37a2433",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-12",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "墨西哥",
-      "away": "南非",
-      "homeEn": "Mexico",
-      "awayEn": "South Africa",
-      "odds": {
-        "home": 1.42,
-        "draw": 4.55,
-        "away": 9.3
-      },
-      "spreads": {
-        "home": 2.04,
-        "away": 1.87,
-        "homePoint": -1.25,
-        "awayPoint": 1.25
-      },
-      "totals": {
-        "over": 1.93,
-        "under": 1.95,
-        "point": 2.25
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-384cbb5d76b535896a24fe65f93cfac8",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-12",
-      "status": "即將開賽",
-      "time": "10:00",
-      "home": "南韓",
-      "away": "Czech Republic",
-      "homeEn": "South Korea",
-      "awayEn": "Czech Republic",
-      "odds": {
-        "home": 2.67,
-        "draw": 3.16,
-        "away": 2.93
-      },
-      "spreads": {
-        "home": 1.85,
-        "away": 2.06,
-        "homePoint": 0.0,
-        "awayPoint": -0.0
-      },
-      "totals": {
-        "over": 1.73,
-        "under": 2.27,
-        "point": 2.0
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-d1f4f946c70a0b4e81f5d43e9d32361c",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-13",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "加拿大",
-      "away": "Bosnia & Herzegovina",
-      "homeEn": "Canada",
-      "awayEn": "Bosnia & Herzegovina",
-      "odds": {
-        "home": 1.75,
-        "draw": 3.8,
-        "away": 4.9
-      },
-      "spreads": {
-        "home": 1.83,
-        "away": 2.09,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.07,
-        "under": 1.72,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-c12986f447a515fbe641addd786dbb24",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-13",
-      "status": "即將開賽",
-      "time": "09:00",
-      "home": "美國",
-      "away": "巴拉圭",
-      "homeEn": "USA",
-      "awayEn": "Paraguay",
-      "odds": {
-        "home": 2.01,
-        "draw": 3.52,
-        "away": 4.0
-      },
-      "spreads": {
-        "home": 2.0,
-        "away": 1.91,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.02,
-        "under": 1.87,
-        "point": 2.25
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-26634922d3f78c146440816023e40de8",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-14",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "卡達",
-      "away": "瑞士",
-      "homeEn": "Qatar",
-      "awayEn": "Switzerland",
-      "odds": {
-        "home": 15.0,
-        "draw": 6.5,
-        "away": 1.22
-      },
-      "spreads": {
-        "home": 2.25,
-        "away": 1.69,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.66,
-        "under": 2.16,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-f6c8748a16516e0998f95de14235432a",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-14",
-      "status": "即將開賽",
-      "time": "06:00",
-      "home": "巴西",
-      "away": "摩洛哥",
-      "homeEn": "Brazil",
-      "awayEn": "Morocco",
-      "odds": {
-        "home": 1.68,
-        "draw": 3.8,
-        "away": 5.75
-      },
-      "spreads": {
-        "home": 1.88,
-        "away": 2.02,
-        "homePoint": -0.75,
-        "awayPoint": 0.75
-      },
-      "totals": {
-        "over": 1.85,
-        "under": 2.05,
-        "point": 2.25
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-5ae41a06735c926eeb7f74006933adce",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-14",
-      "status": "即將開賽",
-      "time": "09:00",
-      "home": "Haiti",
-      "away": "蘇格蘭",
-      "homeEn": "Haiti",
-      "awayEn": "Scotland",
-      "odds": {
-        "home": 6.25,
-        "draw": 4.4,
-        "away": 1.55
-      },
-      "spreads": {
-        "home": 1.96,
-        "away": 1.94,
-        "homePoint": 1.0,
-        "awayPoint": -1.0
-      },
-      "totals": {
-        "over": 1.92,
-        "under": 1.97,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-564084f52cc9f1abcc18187c168a7cdc",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-14",
-      "status": "即將開賽",
-      "time": "12:00",
-      "home": "澳洲",
-      "away": "Turkey",
-      "homeEn": "Australia",
-      "awayEn": "Turkey",
-      "odds": {
-        "home": 5.0,
-        "draw": 3.85,
-        "away": 1.75
-      },
-      "spreads": {
-        "home": 2.1,
-        "away": 1.77,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 2.0,
-        "under": 1.82,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-d79edbd6aaeb578d33e313446b18d333",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-15",
-      "status": "即將開賽",
-      "time": "01:00",
-      "home": "德國",
-      "away": "Curaçao",
-      "homeEn": "Germany",
-      "awayEn": "Curaçao",
-      "odds": {
-        "home": 1.05,
-        "draw": 16.25,
-        "away": 56.0
-      },
-      "spreads": {
-        "home": 1.83,
-        "away": 2.02,
-        "homePoint": -3.25,
-        "awayPoint": 3.25
-      },
-      "totals": {
-        "over": 2.0,
-        "under": 1.84,
-        "point": 4.25
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-32ec06abda2398ac41501c86eb9aa376",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-15",
-      "status": "即將開賽",
-      "time": "04:00",
-      "home": "荷蘭",
-      "away": "日本",
-      "homeEn": "Netherlands",
-      "awayEn": "Japan",
-      "odds": {
-        "home": 2.01,
-        "draw": 3.62,
-        "away": 3.88
-      },
-      "spreads": {
-        "home": 2.08,
-        "away": 1.84,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.0,
-        "under": 1.89,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-05752bb341e197001387b64f3a06b9b2",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-15",
+      "id": "odds-2b042ddad3d3c6c6fe5b7005dc26c775",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-21",
       "status": "即將開賽",
       "time": "07:00",
-      "home": "Ivory Coast",
-      "away": "厄瓜多",
-      "homeEn": "Ivory Coast",
-      "awayEn": "Ecuador",
+      "home": "紐約尼克",
+      "away": "費城七六人",
+      "homeEn": "New York Knicks",
+      "awayEn": "Philadelphia 76ers",
       "odds": {
-        "home": 3.65,
-        "draw": 2.82,
-        "away": 2.47
+        "home": 1.53,
+        "draw": 12.0,
+        "away": 2.55
       },
       "spreads": {
-        "home": 1.85,
-        "away": 2.06,
-        "homePoint": 0.25,
-        "awayPoint": -0.25
+        "home": 1.89,
+        "away": 1.92,
+        "homePoint": -5.0,
+        "awayPoint": 5.0
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.81,
+        "point": 232.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-bccd283de56915e29af1788beb0abfc9",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-21",
+      "status": "即將開賽",
+      "time": "09:30",
+      "home": "聖安東尼奧馬刺",
+      "away": "奧克拉荷馬雷霆",
+      "homeEn": "San Antonio Spurs",
+      "awayEn": "Oklahoma City Thunder",
+      "odds": {
+        "home": 1.77,
+        "draw": 12.0,
+        "away": 2.1
+      },
+      "spreads": {
+        "home": 1.89,
+        "away": 1.92,
+        "homePoint": -2.0,
+        "awayPoint": 2.0
       },
       "totals": {
         "over": 1.82,
-        "under": 2.09,
-        "point": 1.75
+        "under": 1.82,
+        "point": 228.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-b55f9569de3f4d731bc5537ff5ff43e4",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-15",
+      "id": "odds-85e6e4e2404ef7268659739997758da1",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
       "status": "即將開賽",
-      "time": "10:00",
-      "home": "瑞典",
-      "away": "突尼西亞",
-      "homeEn": "Sweden",
-      "awayEn": "Tunisia",
+      "time": "07:10",
+      "home": "奧蘭多魔術",
+      "away": "亞特蘭大老鷹",
+      "homeEn": "Orlando Magic",
+      "awayEn": "Atlanta Hawks",
       "odds": {
-        "home": 1.93,
-        "draw": 3.52,
-        "away": 4.35
+        "home": 1.74,
+        "draw": 12.0,
+        "away": 2.15
       },
       "spreads": {
-        "home": 1.93,
-        "away": 1.97,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.2,
-        "under": 1.64,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-c54f00b11925751d2b62988775c6c239",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-16",
-      "status": "即將開賽",
-      "time": "00:00",
-      "home": "西班牙",
-      "away": "Cape Verde",
-      "homeEn": "Spain",
-      "awayEn": "Cape Verde",
-      "odds": {
-        "home": 1.11,
-        "draw": 11.0,
-        "away": 27.0
-      },
-      "spreads": {
-        "home": 1.88,
-        "away": 1.96,
+        "home": 1.92,
+        "away": 1.92,
         "homePoint": -2.5,
         "awayPoint": 2.5
       },
       "totals": {
-        "over": 1.93,
-        "under": 1.91,
-        "point": 3.5
+        "over": 1.92,
+        "under": 1.92,
+        "point": 233.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-fbfb95c62003fd6d828b309f96ee1f9b",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-16",
+      "id": "odds-164cc0396837d5ff433215ffd3279283",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
       "status": "即將開賽",
-      "time": "03:00",
-      "home": "比利時",
-      "away": "Egypt",
-      "homeEn": "Belgium",
-      "awayEn": "Egypt",
+      "time": "07:10",
+      "home": "華盛頓巫師",
+      "away": "密爾瓦基公鹿",
+      "homeEn": "Washington Wizards",
+      "awayEn": "Milwaukee Bucks",
       "odds": {
-        "home": 1.69,
-        "draw": 3.9,
-        "away": 5.45
-      },
-      "spreads": {
-        "home": 1.89,
-        "away": 2.02,
-        "homePoint": -0.75,
-        "awayPoint": 0.75
-      },
-      "totals": {
-        "over": 2.04,
-        "under": 1.85,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-64b91c5f2db61c7358a4f05459e83c52",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-16",
-      "status": "即將開賽",
-      "time": "06:00",
-      "home": "沙烏地阿拉伯",
-      "away": "烏拉圭",
-      "homeEn": "Saudi Arabia",
-      "awayEn": "Uruguay",
-      "odds": {
-        "home": 8.5,
-        "draw": 4.55,
-        "away": 1.44
-      },
-      "spreads": {
-        "home": 1.88,
-        "away": 2.03,
-        "homePoint": 1.25,
-        "awayPoint": -1.25
-      },
-      "totals": {
-        "over": 2.02,
-        "under": 1.87,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-ec51b9c44ad5e34552f3ab53f7262813",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-16",
-      "status": "即將開賽",
-      "time": "09:00",
-      "home": "伊朗",
-      "away": "New Zealand",
-      "homeEn": "Iran",
-      "awayEn": "New Zealand",
-      "odds": {
-        "home": 1.91,
-        "draw": 3.47,
-        "away": 4.47
+        "home": 1.43,
+        "draw": 12.0,
+        "away": 2.9
       },
       "spreads": {
         "home": 1.92,
-        "away": 1.99,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
+        "away": 1.92,
+        "homePoint": -6.5,
+        "awayPoint": 6.5
       },
       "totals": {
-        "over": 2.09,
-        "under": 1.82,
-        "point": 2.25
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-73a4fcd14cc9766b9b9bfd50b8ca153a",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-17",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "法國",
-      "away": "塞內加爾",
-      "homeEn": "France",
-      "awayEn": "Senegal",
-      "odds": {
-        "home": 1.49,
-        "draw": 4.4,
-        "away": 7.5
-      },
-      "spreads": {
-        "home": 1.83,
-        "away": 2.1,
-        "homePoint": -1.0,
-        "awayPoint": 1.0
-      },
-      "totals": {
-        "over": 2.01,
+        "over": 1.96,
         "under": 1.88,
-        "point": 2.5
+        "point": 238.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-4d4f2b9b78182b557d4fbf8dcf4f4af2",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-17",
+      "id": "odds-47cc511bb5ce50f715e3625ce5ef77ee",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
       "status": "即將開賽",
-      "time": "06:00",
-      "home": "Iraq",
-      "away": "Norway",
-      "homeEn": "Iraq",
-      "awayEn": "Norway",
+      "time": "07:40",
+      "home": "布魯克林籃網",
+      "away": "夏洛特黃蜂",
+      "homeEn": "Brooklyn Nets",
+      "awayEn": "Charlotte Hornets",
       "odds": {
-        "home": 16.0,
-        "draw": 6.75,
-        "away": 1.22
+        "home": 2.45,
+        "draw": 12.0,
+        "away": 1.59
       },
       "spreads": {
-        "home": 2.09,
-        "away": 1.83,
-        "homePoint": 1.75,
-        "awayPoint": -1.75
+        "home": 1.92,
+        "away": 1.92,
+        "homePoint": 4.5,
+        "awayPoint": -4.5
       },
       "totals": {
-        "over": 1.94,
-        "under": 1.87,
-        "point": 3.0
+        "over": 1.96,
+        "under": 1.88,
+        "point": 226.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-f31b2ee9e1cc6f7e641467f8237eaa21",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-17",
+      "id": "odds-93cdd8e4ade5697cfccf42ee42c4d207",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
       "status": "即將開賽",
-      "time": "09:00",
-      "home": "阿根廷",
-      "away": "Algeria",
-      "homeEn": "Argentina",
-      "awayEn": "Algeria",
+      "time": "07:40",
+      "home": "邁阿密熱火",
+      "away": "明尼蘇達灰狼",
+      "homeEn": "Miami Heat",
+      "awayEn": "Minnesota Timberwolves",
       "odds": {
-        "home": 1.42,
-        "draw": 4.55,
-        "away": 9.3
+        "home": 1.87,
+        "draw": 12.0,
+        "away": 2.06
+      },
+      "spreads": {
+        "home": 1.99,
+        "away": 1.93,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.96,
+        "under": 1.96,
+        "point": 243.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-fd33c09c84ab4c2fe6955d59f8dc5dd2",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
+      "status": "即將開賽",
+      "time": "08:10",
+      "home": "紐奧良鵜鶘",
+      "away": "印第安納溜馬",
+      "homeEn": "New Orleans Pelicans",
+      "awayEn": "Indiana Pacers",
+      "odds": {
+        "home": 2.35,
+        "draw": 12.0,
+        "away": 1.62
+      },
+      "spreads": {
+        "home": 1.84,
+        "away": 2.01,
+        "homePoint": 4.5,
+        "awayPoint": -4.5
+      },
+      "totals": {
+        "over": 1.96,
+        "under": 1.88,
+        "point": 243.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-e6769c813dd625b622df94c14a562ce2",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
+      "status": "即將開賽",
+      "time": "08:10",
+      "home": "曼菲斯灰熊",
+      "away": "猶他爵士",
+      "homeEn": "Memphis Grizzlies",
+      "awayEn": "Utah Jazz",
+      "odds": {
+        "home": 2.25,
+        "draw": 12.0,
+        "away": 1.69
+      },
+      "spreads": {
+        "home": 1.84,
+        "away": 2.01,
+        "homePoint": 3.5,
+        "awayPoint": -3.5
+      },
+      "totals": {
+        "over": 1.92,
+        "under": 1.92,
+        "point": 241.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-af2f084075391e55ba2a596e7846bb40",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
+      "status": "即將開賽",
+      "time": "08:40",
+      "home": "休士頓火箭",
+      "away": "達拉斯獨行俠",
+      "homeEn": "Houston Rockets",
+      "awayEn": "Dallas Mavericks",
+      "odds": {
+        "home": 1.32,
+        "draw": 12.0,
+        "away": 3.55
+      },
+      "spreads": {
+        "home": 1.84,
+        "away": 2.01,
+        "homePoint": -7.5,
+        "awayPoint": 7.5
+      },
+      "totals": {
+        "over": 1.96,
+        "under": 1.88,
+        "point": 227.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-6fff70f4bf196dba25060a5775a03b54",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
+      "status": "即將開賽",
+      "time": "10:10",
+      "home": "洛杉磯湖人",
+      "away": "金州勇士",
+      "homeEn": "Los Angeles Lakers",
+      "awayEn": "Golden State Warriors",
+      "odds": {
+        "home": 1.54,
+        "draw": 12.0,
+        "away": 2.68
       },
       "spreads": {
         "home": 1.94,
-        "away": 1.96,
-        "homePoint": -1.25,
-        "awayPoint": 1.25
-      },
-      "totals": {
-        "over": 1.97,
-        "under": 1.92,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-25161cf6cf0cd9be17ae2e7e224a1f45",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-17",
-      "status": "即將開賽",
-      "time": "12:00",
-      "home": "Austria",
-      "away": "Jordan",
-      "homeEn": "Austria",
-      "awayEn": "Jordan",
-      "odds": {
-        "home": 1.3,
-        "draw": 5.8,
-        "away": 10.0
-      },
-      "spreads": {
-        "home": 1.95,
-        "away": 1.95,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.54,
-        "under": 2.4,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-6cc871c121a1869b4612d3fb22fa9d55",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-18",
-      "status": "即將開賽",
-      "time": "01:00",
-      "home": "葡萄牙",
-      "away": "DR Congo",
-      "homeEn": "Portugal",
-      "awayEn": "DR Congo",
-      "odds": {
-        "home": 1.27,
-        "draw": 5.8,
-        "away": 12.0
-      },
-      "spreads": {
-        "home": 1.85,
-        "away": 2.07,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.61,
-        "under": 2.25,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-689096c8cd7e2753b9fec95321943c5d",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-18",
-      "status": "即將開賽",
-      "time": "04:00",
-      "home": "英格蘭",
-      "away": "克羅埃西亞",
-      "homeEn": "England",
-      "awayEn": "Croatia",
-      "odds": {
-        "home": 1.76,
-        "draw": 3.84,
-        "away": 4.95
-      },
-      "spreads": {
-        "home": 1.98,
-        "away": 1.92,
-        "homePoint": -0.75,
-        "awayPoint": 0.75
-      },
-      "totals": {
-        "over": 1.91,
-        "under": 1.98,
-        "point": 2.25
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-87afdb85c977b451e1c00f5e3e632601",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-18",
-      "status": "即將開賽",
-      "time": "07:00",
-      "home": "迦納",
-      "away": "Panama",
-      "homeEn": "Ghana",
-      "awayEn": "Panama",
-      "odds": {
-        "home": 2.05,
-        "draw": 3.64,
-        "away": 3.72
-      },
-      "spreads": {
-        "home": 2.09,
-        "away": 1.83,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.02,
-        "under": 1.87,
-        "point": 2.25
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-22083e7a8e5362c711bc05c1e1319a1f",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-18",
-      "status": "即將開賽",
-      "time": "10:00",
-      "home": "Uzbekistan",
-      "away": "哥倫比亞",
-      "homeEn": "Uzbekistan",
-      "awayEn": "Colombia",
-      "odds": {
-        "home": 8.9,
-        "draw": 4.55,
-        "away": 1.43
-      },
-      "spreads": {
-        "home": 1.9,
-        "away": 2.01,
-        "homePoint": 1.25,
-        "awayPoint": -1.25
-      },
-      "totals": {
-        "over": 2.01,
-        "under": 1.88,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-66ebb9e3f949caded535d97ce686ca09",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-19",
-      "status": "即將開賽",
-      "time": "00:00",
-      "home": "Czech Republic",
-      "away": "南非",
-      "homeEn": "Czech Republic",
-      "awayEn": "South Africa",
-      "odds": {
-        "home": 2.0,
-        "draw": 3.3,
-        "away": 4.1
-      },
-      "spreads": {
-        "home": 1.93,
-        "away": 1.85,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.25,
-        "under": 1.62,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-289bc2e9f5adad8ae4d9a75a7c5461ad",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-19",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "瑞士",
-      "away": "Bosnia & Herzegovina",
-      "homeEn": "Switzerland",
-      "awayEn": "Bosnia & Herzegovina",
-      "odds": {
-        "home": 1.57,
-        "draw": 3.9,
-        "away": 6.1
-      },
-      "spreads": {
-        "home": 1.58,
-        "away": 2.29,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
+        "away": 1.98,
+        "homePoint": -4.5,
+        "awayPoint": 4.5
       },
       "totals": {
         "over": 1.95,
-        "under": 1.8,
-        "point": 2.5
+        "under": 1.97,
+        "point": 235.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-fa9502285b257b03e62968d50d9229fc",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-19",
+      "id": "odds-71e24359951927c356bd8c852fb867dd",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-22",
       "status": "即將開賽",
-      "time": "06:00",
-      "home": "加拿大",
-      "away": "卡達",
-      "homeEn": "Canada",
-      "awayEn": "Qatar",
+      "time": "10:10",
+      "home": "波特蘭拓荒者",
+      "away": "鳳凰城太陽",
+      "homeEn": "Portland Trail Blazers",
+      "awayEn": "Phoenix Suns",
       "odds": {
-        "home": 1.26,
-        "draw": 4.9,
-        "away": 8.5
+        "home": 1.59,
+        "draw": 12.0,
+        "away": 2.45
       },
       "spreads": {
-        "home": 1.98,
+        "home": 1.92,
+        "away": 1.92,
+        "homePoint": -4.5,
+        "awayPoint": 4.5
+      },
+      "totals": {
+        "over": 1.92,
+        "under": 1.92,
+        "point": 235.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-110e33c79c5ec8c0377702aff685f83b",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-23",
+      "status": "即將開賽",
+      "time": "07:10",
+      "home": "費城七六人",
+      "away": "克里夫蘭騎士",
+      "homeEn": "Philadelphia 76ers",
+      "awayEn": "Cleveland Cavaliers",
+      "odds": {
+        "home": 1.51,
+        "draw": 12.0,
+        "away": 2.33
+      },
+      "spreads": {
+        "home": 1.87,
+        "away": 1.79,
+        "homePoint": -4.5,
+        "awayPoint": 4.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 233.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-223b2883b9b05a67329ef246384b85f1",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-23",
+      "status": "即將開賽",
+      "time": "09:40",
+      "home": "奧克拉荷馬雷霆",
+      "away": "丹佛金塊",
+      "homeEn": "Oklahoma City Thunder",
+      "awayEn": "Denver Nuggets",
+      "odds": {
+        "home": 1.27,
+        "draw": 12.0,
+        "away": 3.29
+      },
+      "spreads": {
+        "home": 1.87,
+        "away": 1.79,
+        "homePoint": -7.5,
+        "awayPoint": 7.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 232.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-0d34c898f6cbb990077ae9f0a2773513",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-24",
+      "status": "即將開賽",
+      "time": "07:10",
+      "home": "波士頓塞爾提克",
+      "away": "紐約尼克",
+      "homeEn": "Boston Celtics",
+      "awayEn": "New York Knicks",
+      "odds": {
+        "home": 1.65,
+        "draw": 12.0,
+        "away": 2.06
+      },
+      "spreads": {
+        "home": 1.83,
+        "away": 1.83,
+        "homePoint": -2.5,
+        "awayPoint": 2.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 223.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-49fc89a9696a9a20b658732b34ce61c4",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-24",
+      "status": "即將開賽",
+      "time": "09:40",
+      "home": "聖安東尼奧馬刺",
+      "away": "休士頓火箭",
+      "homeEn": "San Antonio Spurs",
+      "awayEn": "Houston Rockets",
+      "odds": {
+        "home": 1.41,
+        "draw": 12.0,
+        "away": 2.61
+      },
+      "spreads": {
+        "home": 1.83,
+        "away": 1.83,
+        "homePoint": -5.5,
+        "awayPoint": 5.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 225.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-45ebc54751ef3e435192eaeb0470acfb",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-31",
+      "status": "即將開賽",
+      "time": "07:10",
+      "home": "華盛頓巫師",
+      "away": "夏洛特黃蜂",
+      "homeEn": "Washington Wizards",
+      "awayEn": "Charlotte Hornets",
+      "odds": {
+        "home": 1.88,
+        "draw": 12.0,
+        "away": 1.78
+      },
+      "spreads": {
+        "home": 1.79,
+        "away": 1.87,
+        "homePoint": 1.5,
+        "awayPoint": -1.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 235.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-036a93ca33d6261c21d4bfa6e0d02568",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-31",
+      "status": "即將開賽",
+      "time": "07:40",
+      "home": "波士頓塞爾提克",
+      "away": "芝加哥公牛",
+      "homeEn": "Boston Celtics",
+      "awayEn": "Chicago Bulls",
+      "odds": {
+        "home": 1.09,
+        "draw": 12.0,
+        "away": 5.7
+      },
+      "spreads": {
+        "home": 1.83,
+        "away": 1.83,
+        "homePoint": -11.5,
+        "awayPoint": 11.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 232.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-64df299b882ea19ad5f8cb0ed5516a6f",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-31",
+      "status": "即將開賽",
+      "time": "07:40",
+      "home": "布魯克林籃網",
+      "away": "底特律活塞",
+      "homeEn": "Brooklyn Nets",
+      "awayEn": "Detroit Pistons",
+      "odds": {
+        "home": 3.42,
+        "draw": 12.0,
+        "away": 1.25
+      },
+      "spreads": {
+        "home": 1.83,
+        "away": 1.83,
+        "homePoint": 7.5,
+        "awayPoint": -7.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 225.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-96a166bbd49782dbd9a61c2fb9069787",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-31",
+      "status": "即將開賽",
+      "time": "07:40",
+      "home": "費城七六人",
+      "away": "紐約尼克",
+      "homeEn": "Philadelphia 76ers",
+      "awayEn": "New York Knicks",
+      "odds": {
+        "home": 1.67,
+        "draw": 12.0,
+        "away": 2.02
+      },
+      "spreads": {
+        "home": 1.79,
+        "away": 1.87,
+        "homePoint": -1.5,
+        "awayPoint": 1.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 231.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-b9778d0e3a26167eb49901dcae7eeb98",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-31",
+      "status": "即將開賽",
+      "time": "08:10",
+      "home": "達拉斯獨行俠",
+      "away": "休士頓火箭",
+      "homeEn": "Dallas Mavericks",
+      "awayEn": "Houston Rockets",
+      "odds": {
+        "home": 2.33,
+        "draw": 12.0,
+        "away": 1.51
+      },
+      "spreads": {
+        "home": 1.79,
+        "away": 1.87,
+        "homePoint": 4.5,
+        "awayPoint": -4.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 226.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-c3a424e24d426af94a693e06a33e3037",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-31",
+      "status": "即將開賽",
+      "time": "08:10",
+      "home": "邁阿密熱火",
+      "away": "印第安納溜馬",
+      "homeEn": "Miami Heat",
+      "awayEn": "Indiana Pacers",
+      "odds": {
+        "home": 1.56,
+        "draw": 12.0,
+        "away": 2.21
+      },
+      "spreads": {
+        "home": 1.83,
+        "away": 1.83,
+        "homePoint": -3.5,
+        "awayPoint": 3.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 241.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-9ae108f7a23e86e8102237053dd9e58d",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-31",
+      "status": "即將開賽",
+      "time": "10:10",
+      "home": "鳳凰城太陽",
+      "away": "丹佛金塊",
+      "homeEn": "Phoenix Suns",
+      "awayEn": "Denver Nuggets",
+      "odds": {
+        "home": 2.02,
+        "draw": 12.0,
+        "away": 1.67
+      },
+      "spreads": {
+        "home": 1.79,
+        "away": 1.87,
+        "homePoint": 2.5,
+        "awayPoint": -2.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 233.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-761c15cdefb5a94e34f234e11d6e57ad",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-10-31",
+      "status": "即將開賽",
+      "time": "10:10",
+      "home": "金州勇士",
+      "away": "洛杉磯湖人",
+      "homeEn": "Golden State Warriors",
+      "awayEn": "Los Angeles Lakers",
+      "odds": {
+        "home": 1.78,
+        "draw": 12.0,
+        "away": 1.88
+      },
+      "spreads": {
+        "home": 1.87,
         "away": 1.79,
         "homePoint": -1.5,
         "awayPoint": 1.5
       },
       "totals": {
-        "over": 1.93,
+        "over": 1.83,
         "under": 1.83,
-        "point": 2.5
+        "point": 235.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-0f2aeae6ac8e77223848d23a4ca86b0d",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-19",
+      "id": "odds-85869b2fdc16ef10d3e2582bf05ead95",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-07",
       "status": "即將開賽",
-      "time": "09:00",
-      "home": "墨西哥",
-      "away": "南韓",
-      "homeEn": "Mexico",
-      "awayEn": "South Korea",
+      "time": "08:40",
+      "home": "克里夫蘭騎士",
+      "away": "費城七六人",
+      "homeEn": "Cleveland Cavaliers",
+      "awayEn": "Philadelphia 76ers",
       "odds": {
-        "home": 1.8,
-        "draw": 3.5,
-        "away": 4.8
+        "home": 2.0,
+        "draw": 12.0,
+        "away": 2.0
       },
-      "spreads": {
-        "home": 1.8,
-        "away": 1.98,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.18,
-        "under": 1.65,
-        "point": 2.5
-      },
+      "spreads": {},
+      "totals": {},
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-065b3573e875f8d23803357f73e5b99e",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-20",
+      "id": "odds-83d77fe350d56a036fd7a3404e78249a",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-07",
       "status": "即將開賽",
-      "time": "03:00",
-      "home": "美國",
-      "away": "澳洲",
-      "homeEn": "USA",
-      "awayEn": "Australia",
+      "time": "11:10",
+      "home": "洛杉磯湖人",
+      "away": "波特蘭拓荒者",
+      "homeEn": "Los Angeles Lakers",
+      "awayEn": "Portland Trail Blazers",
       "odds": {
-        "home": 1.77,
-        "draw": 4.1,
-        "away": 4.7
+        "home": 2.0,
+        "draw": 12.0,
+        "away": 2.0
       },
-      "spreads": {
-        "home": 3.16,
-        "away": 1.35,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 2.07,
-        "under": 1.79,
-        "point": 2.5
-      },
+      "spreads": {},
+      "totals": {},
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-4cd769aa7bae0ad9762bd69b80ef2903",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-20",
+      "id": "odds-6669b911691463c669a5c10574742e8e",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-14",
       "status": "即將開賽",
-      "time": "06:00",
-      "home": "蘇格蘭",
-      "away": "摩洛哥",
-      "homeEn": "Scotland",
-      "awayEn": "Morocco",
+      "time": "08:10",
+      "home": "印第安納溜馬",
+      "away": "紐約尼克",
+      "homeEn": "Indiana Pacers",
+      "awayEn": "New York Knicks",
       "odds": {
-        "home": 3.65,
-        "draw": 3.15,
-        "away": 1.9
-      },
-      "spreads": {
-        "home": 1.8,
-        "away": 1.98,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 2.28,
-        "under": 1.61,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-ef0f74a991d3e35798ae5af77667bce1",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-20",
-      "status": "即將開賽",
-      "time": "09:00",
-      "home": "巴西",
-      "away": "Haiti",
-      "homeEn": "Brazil",
-      "awayEn": "Haiti",
-      "odds": {
-        "home": 1.06,
-        "draw": 13.0,
-        "away": 35.0
-      },
-      "spreads": {
-        "home": 1.68,
-        "away": 2.18,
-        "homePoint": -2.5,
-        "awayPoint": 2.5
-      },
-      "totals": {
-        "over": 1.77,
-        "under": 2.01,
-        "point": 3.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-f955d4b3395ce6e3b5ac1031ca52ca4e",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-20",
-      "status": "即將開賽",
-      "time": "11:00",
-      "home": "Turkey",
-      "away": "巴拉圭",
-      "homeEn": "Turkey",
-      "awayEn": "Paraguay",
-      "odds": {
-        "home": 2.25,
-        "draw": 3.3,
-        "away": 3.5
-      },
-      "spreads": {
-        "home": 2.18,
-        "away": 1.66,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.25,
-        "under": 1.61,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-4f0c518545b0096c68326daf25bffc1e",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-21",
-      "status": "即將開賽",
-      "time": "01:00",
-      "home": "荷蘭",
-      "away": "瑞典",
-      "homeEn": "Netherlands",
-      "awayEn": "Sweden",
-      "odds": {
-        "home": 1.65,
-        "draw": 3.95,
-        "away": 5.3
-      },
-      "spreads": {
-        "home": 1.61,
-        "away": 2.21,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 1.79,
-        "under": 1.77,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-f1ab0f69832972a329243522ceaa7804",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-21",
-      "status": "即將開賽",
-      "time": "04:00",
-      "home": "德國",
-      "away": "Ivory Coast",
-      "homeEn": "Germany",
-      "awayEn": "Ivory Coast",
-      "odds": {
-        "home": 1.57,
-        "draw": 4.1,
-        "away": 5.8
-      },
-      "spreads": {
-        "home": 1.55,
-        "away": 2.41,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 1.72,
-        "under": 1.83,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-681895f294b670b4c7b14495dfb583bc",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-21",
-      "status": "即將開賽",
-      "time": "08:00",
-      "home": "厄瓜多",
-      "away": "Curaçao",
-      "homeEn": "Ecuador",
-      "awayEn": "Curaçao",
-      "odds": {
-        "home": 1.16,
-        "draw": 6.5,
-        "away": 10.0
-      },
-      "spreads": {
-        "home": 1.65,
-        "away": 2.18,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.56,
-        "under": 2.08,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-dfc5202cf1b8ae002cf952cd04f235b9",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-21",
-      "status": "即將開賽",
-      "time": "12:00",
-      "home": "突尼西亞",
-      "away": "日本",
-      "homeEn": "Tunisia",
-      "awayEn": "Japan",
-      "odds": {
-        "home": 5.1,
-        "draw": 3.6,
-        "away": 1.74
-      },
-      "spreads": {
         "home": 2.02,
-        "away": 1.77,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 2.08,
-        "under": 1.55,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-73529a242e319a86bf3d00ddb4accc37",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-22",
-      "status": "即將開賽",
-      "time": "00:00",
-      "home": "西班牙",
-      "away": "沙烏地阿拉伯",
-      "homeEn": "Spain",
-      "awayEn": "Saudi Arabia",
-      "odds": {
-        "home": 1.09,
-        "draw": 10.9,
-        "away": 29.0
+        "draw": 12.0,
+        "away": 1.67
       },
       "spreads": {
-        "home": 2.03,
-        "away": 1.82,
-        "homePoint": -2.5,
-        "awayPoint": 2.5
+        "home": 1.79,
+        "away": 1.87,
+        "homePoint": 2.5,
+        "awayPoint": -2.5
       },
       "totals": {
-        "over": 2.23,
-        "under": 1.68,
-        "point": 3.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-5f92f257386ec5bf7c6e2498a21f3a61",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-22",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "比利時",
-      "away": "伊朗",
-      "homeEn": "Belgium",
-      "awayEn": "Iran",
-      "odds": {
-        "home": 1.37,
-        "draw": 4.59,
-        "away": 7.65
-      },
-      "spreads": {
-        "home": 1.91,
-        "away": 1.89,
-        "homePoint": -1.25,
-        "awayPoint": 1.25
-      },
-      "totals": {
-        "over": 1.84,
-        "under": 1.95,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-852a3abe6d46820720febc0fedebff9a",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-22",
-      "status": "即將開賽",
-      "time": "06:00",
-      "home": "烏拉圭",
-      "away": "Cape Verde",
-      "homeEn": "Uruguay",
-      "awayEn": "Cape Verde",
-      "odds": {
-        "home": 1.45,
-        "draw": 4.35,
-        "away": 7.5
-      },
-      "spreads": {
-        "home": 2.29,
-        "away": 1.6,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.81,
-        "under": 1.75,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-c1ec9a65f4b4cf74477b368a7d6282de",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-22",
-      "status": "即將開賽",
-      "time": "09:00",
-      "home": "New Zealand",
-      "away": "Egypt",
-      "homeEn": "New Zealand",
-      "awayEn": "Egypt",
-      "odds": {
-        "home": 5.2,
-        "draw": 3.6,
-        "away": 1.72
-      },
-      "spreads": {
-        "home": 1.34,
-        "away": 3.21,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 2.05,
-        "under": 1.56,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-be6c63f416c67bca1300a98f5b89c3af",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-23",
-      "status": "即將開賽",
-      "time": "01:00",
-      "home": "阿根廷",
-      "away": "Austria",
-      "homeEn": "Argentina",
-      "awayEn": "Austria",
-      "odds": {
-        "home": 1.66,
-        "draw": 3.9,
-        "away": 5.2
-      },
-      "spreads": {
-        "home": 1.62,
-        "away": 2.25,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 1.8,
-        "under": 1.76,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-7ad7a0ce2ef2618bb59b066da5642f70",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-23",
-      "status": "即將開賽",
-      "time": "05:00",
-      "home": "法國",
-      "away": "Iraq",
-      "homeEn": "France",
-      "awayEn": "Iraq",
-      "odds": {
-        "home": 1.13,
-        "draw": 8.5,
-        "away": 21.0
-      },
-      "spreads": {
-        "home": 2.06,
-        "away": 1.69,
-        "homePoint": -2.5,
-        "awayPoint": 2.5
-      },
-      "totals": {
-        "over": 2.16,
-        "under": 1.51,
-        "point": 3.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-3f48473742ca0fd2a85930554720c75e",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-23",
-      "status": "即將開賽",
-      "time": "08:00",
-      "home": "Norway",
-      "away": "塞內加爾",
-      "homeEn": "Norway",
-      "awayEn": "Senegal",
-      "odds": {
-        "home": 2.17,
-        "draw": 3.5,
-        "away": 3.45
-      },
-      "spreads": {
-        "home": 2.08,
-        "away": 1.72,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 1.92,
+        "over": 1.83,
         "under": 1.83,
-        "point": 2.5
+        "point": 233.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-fd8533b650e655030f6a7946f8795db2",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-23",
+      "id": "odds-1fae7f34ec6035dffa74feb148ee26c7",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-14",
       "status": "即將開賽",
-      "time": "11:00",
-      "home": "Jordan",
-      "away": "Algeria",
-      "homeEn": "Jordan",
-      "awayEn": "Algeria",
+      "time": "10:40",
+      "home": "聖安東尼奧馬刺",
+      "away": "金州勇士",
+      "homeEn": "San Antonio Spurs",
+      "awayEn": "Golden State Warriors",
       "odds": {
-        "home": 6.4,
-        "draw": 4.25,
-        "away": 1.55
-      },
-      "spreads": {
-        "home": 2.43,
-        "away": 1.54,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 1.88,
-        "under": 1.88,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-8ba93d190f1f934e33862a97a6353a6e",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-24",
-      "status": "即將開賽",
-      "time": "01:00",
-      "home": "葡萄牙",
-      "away": "Uzbekistan",
-      "homeEn": "Portugal",
-      "awayEn": "Uzbekistan",
-      "odds": {
-        "home": 1.21,
-        "draw": 5.6,
-        "away": 8.5
-      },
-      "spreads": {
-        "home": 1.74,
-        "away": 2.06,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.45,
-        "under": 2.28,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-2f49dd8deae3079dc4eb2d634d18a99c",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-24",
-      "status": "即將開賽",
-      "time": "04:00",
-      "home": "英格蘭",
-      "away": "迦納",
-      "homeEn": "England",
-      "awayEn": "Ghana",
-      "odds": {
-        "home": 1.26,
-        "draw": 5.1,
-        "away": 7.75
-      },
-      "spreads": {
-        "home": 1.92,
-        "away": 1.85,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.6,
-        "under": 2.02,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-c1bc8c26480cd42b89a0de5329581314",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-24",
-      "status": "即將開賽",
-      "time": "07:00",
-      "home": "Panama",
-      "away": "克羅埃西亞",
-      "homeEn": "Panama",
-      "awayEn": "Croatia",
-      "odds": {
-        "home": 6.0,
-        "draw": 4.0,
-        "away": 1.43
-      },
-      "spreads": {
-        "home": 1.56,
-        "away": 2.39,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.8,
-        "under": 1.76,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-68bfc965eb267508e04d8e8d75c1a0ae",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-24",
-      "status": "即將開賽",
-      "time": "10:00",
-      "home": "哥倫比亞",
-      "away": "DR Congo",
-      "homeEn": "Colombia",
-      "awayEn": "DR Congo",
-      "odds": {
-        "home": 1.51,
-        "draw": 4.1,
-        "away": 7.5
-      },
-      "spreads": {
-        "home": 2.42,
-        "away": 1.54,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 2.08,
-        "under": 1.71,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-512ac18beb5aa936a59f7ea3e497ada2",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-25",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "Bosnia & Herzegovina",
-      "away": "卡達",
-      "homeEn": "Bosnia & Herzegovina",
-      "awayEn": "Qatar",
-      "odds": {
-        "home": 1.5,
-        "draw": 4.0,
-        "away": 6.2
-      },
-      "spreads": {
-        "home": 1.61,
-        "away": 2.28,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.05,
-        "under": 1.75,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-c9ef5822ee64fd5275f7c73251bb56c7",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-25",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "瑞士",
-      "away": "加拿大",
-      "homeEn": "Switzerland",
-      "awayEn": "Canada",
-      "odds": {
-        "home": 2.05,
-        "draw": 3.2,
-        "away": 3.5
-      },
-      "spreads": {
-        "home": 2.08,
-        "away": 1.73,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.08,
-        "under": 1.73,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-885ba95805db310a7bcc3fb1a7a6dd28",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-25",
-      "status": "即將開賽",
-      "time": "06:00",
-      "home": "蘇格蘭",
-      "away": "巴西",
-      "homeEn": "Scotland",
-      "awayEn": "Brazil",
-      "odds": {
-        "home": 6.5,
-        "draw": 4.7,
-        "away": 1.45
-      },
-      "spreads": {
-        "home": 1.62,
-        "away": 2.35,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.74,
-        "under": 1.83,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-d1279ce7f33136a33e99ad442fc855e8",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-25",
-      "status": "即將開賽",
-      "time": "06:00",
-      "home": "摩洛哥",
-      "away": "Haiti",
-      "homeEn": "Morocco",
-      "awayEn": "Haiti",
-      "odds": {
-        "home": 1.3,
-        "draw": 4.8,
-        "away": 9.0
-      },
-      "spreads": {
-        "home": 1.82,
-        "away": 1.95,
-        "homePoint": -1.5,
-        "awayPoint": 1.5
-      },
-      "totals": {
-        "over": 1.72,
-        "under": 2.14,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-5993bd5196ca09f83990f0c3261e442e",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-25",
-      "status": "即將開賽",
-      "time": "09:00",
-      "home": "Czech Republic",
-      "away": "墨西哥",
-      "homeEn": "Czech Republic",
-      "awayEn": "Mexico",
-      "odds": {
-        "home": 3.7,
-        "draw": 3.15,
-        "away": 1.66
-      },
-      "spreads": {
-        "home": 1.32,
-        "away": 3.28,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 2.11,
-        "under": 1.7,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-c0355dfc6e26ec327e379b6ef5824a5f",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-25",
-      "status": "即將開賽",
-      "time": "09:00",
-      "home": "南非",
-      "away": "南韓",
-      "homeEn": "South Africa",
-      "awayEn": "South Korea",
-      "odds": {
-        "home": 3.3,
-        "draw": 3.05,
-        "away": 1.8
+        "home": 1.1,
+        "draw": 12.0,
+        "away": 5.41
       },
       "spreads": {
         "home": 1.83,
-        "away": 1.98,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
+        "away": 1.83,
+        "homePoint": -10.5,
+        "awayPoint": 10.5
       },
       "totals": {
-        "over": 2.11,
-        "under": 1.7,
-        "point": 2.5
+        "over": 1.83,
+        "under": 1.83,
+        "point": 234.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-a5a0b544a984ab16e564264f3e859b43",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-26",
+      "id": "odds-086d2fe80483ffcc280994fe2e12d4f4",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-21",
       "status": "即將開賽",
-      "time": "04:00",
-      "home": "Curaçao",
-      "away": "Ivory Coast",
-      "homeEn": "Curaçao",
-      "awayEn": "Ivory Coast",
+      "time": "11:10",
+      "home": "丹佛金塊",
+      "away": "休士頓火箭",
+      "homeEn": "Denver Nuggets",
+      "awayEn": "Houston Rockets",
       "odds": {
-        "home": 8.0,
-        "draw": 5.0,
-        "away": 1.16
+        "home": 1.59,
+        "draw": 12.0,
+        "away": 2.15
       },
       "spreads": {
-        "home": 2.15,
-        "away": 1.68,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
+        "home": 1.87,
+        "away": 1.79,
+        "homePoint": -3.5,
+        "awayPoint": 3.5
       },
       "totals": {
-        "over": 1.69,
-        "under": 2.19,
-        "point": 2.5
+        "over": 1.83,
+        "under": 1.83,
+        "point": 227.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-0ec28b84ec399bd4dffbe8d1bc72b3c4",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-26",
+      "id": "odds-3167a4072c65c9314c71d0fe49be8e28",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-25",
       "status": "即將開賽",
-      "time": "04:00",
-      "home": "厄瓜多",
-      "away": "德國",
-      "homeEn": "Ecuador",
-      "awayEn": "Germany",
+      "time": "09:10",
+      "home": "華盛頓巫師",
+      "away": "波士頓塞爾提克",
+      "homeEn": "Washington Wizards",
+      "awayEn": "Boston Celtics",
       "odds": {
-        "home": 4.1,
-        "draw": 3.4,
-        "away": 1.54
+        "home": 2.61,
+        "draw": 12.0,
+        "away": 1.41
       },
       "spreads": {
-        "home": 2.2,
-        "away": 1.65,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
+        "home": 1.83,
+        "away": 1.83,
+        "homePoint": 5.5,
+        "awayPoint": -5.5
       },
       "totals": {
-        "over": 1.87,
-        "under": 1.91,
-        "point": 2.5
+        "over": 1.83,
+        "under": 1.83,
+        "point": 230.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-0ed0233bddc4eafc8507f86a9c17b998",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-26",
+      "id": "odds-6bfadbd22ed8a054cf82ec1b12b78243",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-25",
       "status": "即將開賽",
-      "time": "07:00",
-      "home": "日本",
-      "away": "瑞典",
-      "homeEn": "Japan",
-      "awayEn": "Sweden",
+      "time": "11:10",
+      "home": "丹佛金塊",
+      "away": "達拉斯獨行俠",
+      "homeEn": "Denver Nuggets",
+      "awayEn": "Dallas Mavericks",
       "odds": {
+        "home": 1.22,
+        "draw": 12.0,
+        "away": 3.65
+      },
+      "spreads": {
+        "home": 1.87,
+        "away": 1.79,
+        "homePoint": -8.5,
+        "awayPoint": 8.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 237.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-4f6d199bb67cf3a517a3880fd2f00b26",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-26",
+      "status": "即將開賽",
+      "time": "06:10",
+      "home": "費城七六人",
+      "away": "邁阿密熱火",
+      "homeEn": "Philadelphia 76ers",
+      "awayEn": "Miami Heat",
+      "odds": {
+        "home": 1.51,
+        "draw": 12.0,
+        "away": 2.33
+      },
+      "spreads": {
+        "home": 1.87,
+        "away": 1.79,
+        "homePoint": -4.5,
+        "awayPoint": 4.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 239.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-07421d1675d6bc51bb5fa91f84a09eb3",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-26",
+      "status": "即將開賽",
+      "time": "08:40",
+      "home": "奧克拉荷馬雷霆",
+      "away": "明尼蘇達灰狼",
+      "homeEn": "Oklahoma City Thunder",
+      "awayEn": "Minnesota Timberwolves",
+      "odds": {
+        "home": 1.18,
+        "draw": 12.0,
+        "away": 4.08
+      },
+      "spreads": {
+        "home": 1.83,
+        "away": 1.83,
+        "homePoint": -8.5,
+        "awayPoint": 8.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 234.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-9aa9f220709533d70d11f85fae886771",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-26",
+      "status": "即將開賽",
+      "time": "11:10",
+      "home": "波特蘭拓荒者",
+      "away": "聖安東尼奧馬刺",
+      "homeEn": "Portland Trail Blazers",
+      "awayEn": "San Antonio Spurs",
+      "odds": {
+        "home": 2.33,
+        "draw": 12.0,
+        "away": 1.51
+      },
+      "spreads": {
+        "home": 1.79,
+        "away": 1.87,
+        "homePoint": 4.5,
+        "awayPoint": -4.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 237.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-3c522e32c3035d7dc3e1734903b84654",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-28",
+      "status": "即將開賽",
+      "time": "08:10",
+      "home": "紐約尼克",
+      "away": "邁阿密熱火",
+      "homeEn": "New York Knicks",
+      "awayEn": "Miami Heat",
+      "odds": {
+        "home": 1.41,
+        "draw": 12.0,
+        "away": 2.61
+      },
+      "spreads": {
+        "home": 1.83,
+        "away": 1.83,
+        "homePoint": -5.5,
+        "awayPoint": 5.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 232.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-13d9ca3bcb664829c603755d31401002",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-11-28",
+      "status": "即將開賽",
+      "time": "10:40",
+      "home": "聖安東尼奧馬刺",
+      "away": "洛杉磯湖人",
+      "homeEn": "San Antonio Spurs",
+      "awayEn": "Los Angeles Lakers",
+      "odds": {
+        "home": 1.27,
+        "draw": 12.0,
+        "away": 3.29
+      },
+      "spreads": {
+        "home": 1.87,
+        "away": 1.79,
+        "homePoint": -7.5,
+        "awayPoint": 7.5
+      },
+      "totals": {
+        "over": 1.83,
+        "under": 1.83,
+        "point": 232.5
+      },
+      "market": "獨贏",
+      "source": "the-odds-api"
+    },
+    {
+      "id": "odds-a6555e8b7252dfb32f1817fc8c59ad83",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-12-26",
+      "status": "即將開賽",
+      "time": "01:00",
+      "home": "紐約尼克",
+      "away": "聖安東尼奧馬刺",
+      "homeEn": "New York Knicks",
+      "awayEn": "San Antonio Spurs",
+      "odds": {
+        "home": 1.92,
+        "draw": 12.0,
+        "away": 1.92
+      },
+      "spreads": {
         "home": 1.94,
-        "draw": 3.15,
-        "away": 3.15
-      },
-      "spreads": {
-        "home": 2.06,
-        "away": 1.74,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
+        "away": 1.87,
+        "homePoint": -1.0,
+        "awayPoint": 1.0
       },
       "totals": {
-        "over": 2.04,
-        "under": 1.76,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-f3c4657daa143a0c5bd62cb370d01ce4",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-26",
-      "status": "即將開賽",
-      "time": "07:00",
-      "home": "突尼西亞",
-      "away": "荷蘭",
-      "homeEn": "Tunisia",
-      "awayEn": "Netherlands",
-      "odds": {
-        "home": 5.0,
-        "draw": 3.7,
-        "away": 1.39
-      },
-      "spreads": {
-        "home": 1.55,
-        "away": 2.41,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.88,
-        "under": 1.88,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-22f6ac06dfcc88a847920f62633e6459",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-26",
-      "status": "即將開賽",
-      "time": "10:00",
-      "home": "巴拉圭",
-      "away": "澳洲",
-      "homeEn": "Paraguay",
-      "awayEn": "Australia",
-      "odds": {
-        "home": 2.0,
-        "draw": 3.05,
-        "away": 3.1
-      },
-      "spreads": {
-        "home": 2.16,
-        "away": 1.67,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.24,
-        "under": 1.63,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-f41aeac9a8343a84b4950f15ea25fba2",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-26",
-      "status": "即將開賽",
-      "time": "10:00",
-      "home": "Turkey",
-      "away": "美國",
-      "homeEn": "Turkey",
-      "awayEn": "USA",
-      "odds": {
-        "home": 2.4,
-        "draw": 3.1,
-        "away": 2.25
-      },
-      "spreads": {
-        "home": 1.53,
-        "away": 2.46,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 1.92,
-        "under": 1.86,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-b86b4d60f773e9e3c46c00e9a6496e79",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-27",
-      "status": "即將開賽",
-      "time": "03:00",
-      "home": "Norway",
-      "away": "法國",
-      "homeEn": "Norway",
-      "awayEn": "France",
-      "odds": {
-        "home": 4.39,
-        "draw": 3.66,
-        "away": 1.78
-      },
-      "spreads": {
-        "home": 1.98,
-        "away": 1.81,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 1.98,
+        "over": 1.83,
         "under": 1.81,
-        "point": 2.5
+        "point": 230.0
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-7e6aee294ea1a4792c59558791084528",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-27",
+      "id": "odds-d60e7fc0690e4dff121a086395e24de4",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-12-26",
       "status": "即將開賽",
-      "time": "03:00",
-      "home": "塞內加爾",
-      "away": "Iraq",
-      "homeEn": "Senegal",
-      "awayEn": "Iraq",
+      "time": "03:30",
+      "home": "波士頓塞爾提克",
+      "away": "邁阿密熱火",
+      "homeEn": "Boston Celtics",
+      "awayEn": "Miami Heat",
       "odds": {
         "home": 1.53,
-        "draw": 4.31,
-        "away": 6.94
+        "draw": 12.0,
+        "away": 2.55
       },
       "spreads": {
-        "home": 4.27,
-        "away": 1.21,
-        "homePoint": -2.5,
-        "awayPoint": 2.5
+        "home": 1.93,
+        "away": 1.88,
+        "homePoint": -5.5,
+        "awayPoint": 5.5
       },
       "totals": {
-        "over": 1.91,
-        "under": 1.87,
-        "point": 2.5
+        "over": 1.81,
+        "under": 1.83,
+        "point": 230.5
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-e07b1926be5a4d515c7eb108dbcee9c5",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-27",
+      "id": "odds-dfd908bad3a3bfcae9e08bf128273b18",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-12-26",
       "status": "即將開賽",
-      "time": "08:00",
-      "home": "Cape Verde",
-      "away": "沙烏地阿拉伯",
-      "homeEn": "Cape Verde",
-      "awayEn": "Saudi Arabia",
+      "time": "06:00",
+      "home": "洛杉磯湖人",
+      "away": "費城七六人",
+      "homeEn": "Los Angeles Lakers",
+      "awayEn": "Philadelphia 76ers",
       "odds": {
-        "home": 2.55,
-        "draw": 3.1,
-        "away": 2.7
-      },
-      "spreads": {
-        "home": 1.5,
-        "away": 2.56,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 2.17,
-        "under": 1.7,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-dcff2e31c0bce001a4db5caaf4fa8822",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-27",
-      "status": "即將開賽",
-      "time": "08:00",
-      "home": "烏拉圭",
-      "away": "西班牙",
-      "homeEn": "Uruguay",
-      "awayEn": "Spain",
-      "odds": {
-        "home": 5.3,
-        "draw": 3.8,
-        "away": 1.57
-      },
-      "spreads": {
-        "home": 2.3,
-        "away": 1.6,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 1.88,
-        "under": 1.88,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-581691da05dcd75b5c6d3be91ee9d2ab",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-27",
-      "status": "即將開賽",
-      "time": "11:00",
-      "home": "New Zealand",
-      "away": "比利時",
-      "homeEn": "New Zealand",
-      "awayEn": "Belgium",
-      "odds": {
-        "home": 10.02,
-        "draw": 5.58,
-        "away": 1.3
+        "home": 1.88,
+        "draw": 12.0,
+        "away": 1.96
       },
       "spreads": {
         "home": 1.91,
-        "away": 1.83,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
+        "away": 1.91,
+        "homePoint": -1.0,
+        "awayPoint": 1.0
       },
       "totals": {
-        "over": 1.65,
-        "under": 2.15,
-        "point": 2.5
+        "over": 1.81,
+        "under": 1.83,
+        "point": 234.0
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-3e3b5fa2b3c963e74cf044c60db0b573",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-27",
+      "id": "odds-2b7218aa25cf98318a40e6f2469a5c5d",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-12-26",
       "status": "即將開賽",
-      "time": "11:00",
-      "home": "Egypt",
-      "away": "伊朗",
-      "homeEn": "Egypt",
-      "awayEn": "Iran",
+      "time": "09:00",
+      "home": "明尼蘇達灰狼",
+      "away": "奧克拉荷馬雷霆",
+      "homeEn": "Minnesota Timberwolves",
+      "awayEn": "Oklahoma City Thunder",
       "odds": {
-        "home": 2.38,
-        "draw": 3.08,
-        "away": 3.62
+        "home": 2.35,
+        "draw": 12.0,
+        "away": 1.62
       },
       "spreads": {
-        "home": 2.24,
-        "away": 1.63,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
+        "home": 1.88,
+        "away": 1.93,
+        "homePoint": 4.0,
+        "awayPoint": -4.0
       },
       "totals": {
-        "over": 1.53,
-        "under": 2.56,
-        "point": 1.5
+        "over": 1.83,
+        "under": 1.81,
+        "point": 233.0
       },
       "market": "獨贏",
       "source": "the-odds-api"
     },
     {
-      "id": "odds-537c0997cd899394f47f16545b7068b2",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-28",
+      "id": "odds-85a2379bc49135f2759709e55af0c4c6",
+      "sport": "籃球",
+      "league": "美國職籃",
+      "leagueEn": "NBA",
+      "date": "2026-12-26",
       "status": "即將開賽",
-      "time": "05:00",
-      "home": "克羅埃西亞",
-      "away": "迦納",
-      "homeEn": "Croatia",
-      "awayEn": "Ghana",
+      "time": "11:30",
+      "home": "金州勇士",
+      "away": "丹佛金塊",
+      "homeEn": "Golden State Warriors",
+      "awayEn": "Denver Nuggets",
       "odds": {
-        "home": 1.6,
-        "draw": 3.7,
-        "away": 5.2
+        "home": 2.07,
+        "draw": 12.0,
+        "away": 1.79
       },
       "spreads": {
-        "home": 1.66,
-        "away": 2.18,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
+        "home": 1.89,
+        "away": 1.92,
+        "homePoint": 2.0,
+        "awayPoint": -2.0
       },
       "totals": {
-        "over": 2.08,
-        "under": 1.73,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-4be17c8e1ccfecb0f2a5ef79e045c415",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-28",
-      "status": "即將開賽",
-      "time": "05:00",
-      "home": "Panama",
-      "away": "英格蘭",
-      "homeEn": "Panama",
-      "awayEn": "England",
-      "odds": {
-        "home": 8.5,
-        "draw": 5.5,
-        "away": 1.27
-      },
-      "spreads": {
-        "home": 1.92,
-        "away": 1.85,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.68,
-        "under": 2.19,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-67ae5751c401a98409b8566ae4897069",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-28",
-      "status": "即將開賽",
-      "time": "07:30",
-      "home": "哥倫比亞",
-      "away": "葡萄牙",
-      "homeEn": "Colombia",
-      "awayEn": "Portugal",
-      "odds": {
-        "home": 3.55,
-        "draw": 3.3,
-        "away": 2.14
-      },
-      "spreads": {
-        "home": 1.7,
-        "away": 2.12,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 2.02,
-        "under": 1.76,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-13eab94a136b9c264ba974cf437a5f71",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-28",
-      "status": "即將開賽",
-      "time": "07:30",
-      "home": "DR Congo",
-      "away": "Uzbekistan",
-      "homeEn": "DR Congo",
-      "awayEn": "Uzbekistan",
-      "odds": {
-        "home": 2.15,
-        "draw": 3.1,
-        "away": 2.8
-      },
-      "spreads": {
-        "home": 2.28,
-        "away": 1.61,
-        "homePoint": -0.5,
-        "awayPoint": 0.5
-      },
-      "totals": {
-        "over": 2.22,
-        "under": 1.65,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-8756200e539155e571557c4f2e0d7f05",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-28",
-      "status": "即將開賽",
-      "time": "10:00",
-      "home": "Algeria",
-      "away": "Austria",
-      "homeEn": "Algeria",
-      "awayEn": "Austria",
-      "odds": {
-        "home": 2.95,
-        "draw": 2.85,
-        "away": 1.98
-      },
-      "spreads": {
-        "home": 1.67,
-        "away": 2.17,
-        "homePoint": 0.5,
-        "awayPoint": -0.5
-      },
-      "totals": {
-        "over": 2.1,
-        "under": 1.71,
-        "point": 2.5
-      },
-      "market": "獨贏",
-      "source": "the-odds-api"
-    },
-    {
-      "id": "odds-54697f453437ab26276d773be1d72e9b",
-      "sport": "世界盃",
-      "league": "FIFA 世界盃",
-      "leagueEn": "世界盃",
-      "date": "2026-06-28",
-      "status": "即將開賽",
-      "time": "10:00",
-      "home": "Jordan",
-      "away": "阿根廷",
-      "homeEn": "Jordan",
-      "awayEn": "Argentina",
-      "odds": {
-        "home": 14.0,
-        "draw": 6.2,
-        "away": 1.17
-      },
-      "spreads": {
-        "home": 2.18,
-        "away": 1.67,
-        "homePoint": 1.5,
-        "awayPoint": -1.5
-      },
-      "totals": {
-        "over": 1.56,
-        "under": 2.3,
-        "point": 2.5
+        "over": 1.81,
+        "under": 1.83,
+        "point": 234.5
       },
       "market": "獨贏",
       "source": "the-odds-api"

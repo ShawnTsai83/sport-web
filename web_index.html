@@ -876,19 +876,19 @@
       const data = await matchRes.json();
       state.matches = data.matches || [];
 
-      // 若今天沒有賽事，就改抓「最早的一天」避免一刷新就空白
+      // 若今天沒有賽事，改抓「今天起最近的一天」（不回退到過去日期）
       if (!state.matches.length && date === todayStr()) {
         const qs2 = new URLSearchParams({ sport, league, date: "", status });
         const fallbackRes = await apiFetch(`/api/matches?${qs2.toString()}`);
         if (fallbackRes.ok) {
           const data2 = await fallbackRes.json();
           const all = data2.matches || [];
-          if (all.length) {
-            const earliest = [...all].sort((a, b) => (a.date || "").localeCompare(b.date || ""))[0]?.date;
-            if (earliest) {
-              dateInput.value = earliest;
-              state.matches = all.filter((m) => m.date === earliest);
-            }
+          const today = todayStr();
+          const futureDates = [...new Set(all.map((m) => m.date).filter((d) => d && d >= today))].sort();
+          if (futureDates.length) {
+            const nearest = futureDates[0];
+            dateInput.value = nearest;
+            state.matches = all.filter((m) => m.date === nearest);
           }
         }
       }

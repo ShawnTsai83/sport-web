@@ -56,6 +56,21 @@ def _today_str() -> str:
     return date.today().isoformat()
 
 
+def _drop_past_matches(matches: List[Dict]) -> List[Dict]:
+    """移除已過期的賽事，避免舊快取在登入後仍顯示過去日期。"""
+    today = date.today()
+    out = []
+    for m in matches:
+        raw = m.get("date") or ""
+        try:
+            d = date.fromisoformat(raw)
+        except ValueError:
+            continue
+        if d >= today:
+            out.append(m)
+    return out
+
+
 def _seed_from(text: str) -> int:
     return sum(ord(c) for c in text)
 
@@ -330,7 +345,7 @@ def load_odds_cache() -> List[Dict]:
         if not _cache_matches_valid(matches):
             continue
         _apply_cache_meta(payload)
-        return matches
+        return _drop_past_matches(matches)
     return []
 
 
@@ -388,6 +403,7 @@ def refresh_from_odds_api(force: bool = False) -> dict:
     }
 
     if all_matches:
+        all_matches = _drop_past_matches(all_matches)
         save_odds_cache(all_matches, meta)
         ODDS_API_META["last_fetch_at"] = datetime.now().isoformat()
         ODDS_API_META["cached_count"] = len(all_matches)
